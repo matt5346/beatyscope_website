@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="smallchat-region">
+
+            <div class="users-region">
+                    <a href="#" class="user-link">
+                        <canvas class="user-icon" data-name="Беатрисс"></canvas>
+                    </a>
+                    <a href="#" class="user-link">
+                        <canvas class="user-icon" data-name="Амфора"></canvas>
+                    </a>
+                    <a href="#" class="user-link">
+                        <canvas class="user-icon" data-name="Марина"></canvas>
+                    </a>
+                    <a href="#" class="user-link">
+                        <canvas class="user-icon" data-name="Жакет"></canvas>
+                    </a>
+                    <a href="#" class="user-link">
+                        <canvas class="user-icon" data-name="Амфора"></canvas>
+                    </a>
+                    <a href="#" class="user-link">
+                        <canvas class="user-icon" data-name="Марина"></canvas>
+                    </a>
+                    <a href="#" class="user-link">
+                        <canvas class="user-icon" data-name="Жакет"></canvas>
+                    </a>
+                </div>
+        <div class="main-region">
+            <div class="chat-header">
+                    <canvas class="user-icon" data-name="Аннэт"></canvas>
+                <div class="user-name">
+                    <span class="name">Аннэт, <span class="type">мастер</span><img class="status online" src="img/icon-online.svg"></span>
+                </div>
+
+
+                <button id="menu_button" class="menu-region small">
+                    <img class="menu" src="img/icon-menu.svg">
+                </button>
+
+                <button id="sidebar_button_small" class="sidebar_btn_small">
+                    <img class="open_cross" src="./img/cross_chat.svg">
+                    <div class="sendmessage">
+                        <img src="./img/icon-message.svg" alt="">
+                    </div>
+                </button>
+                <div id="menu_buttons" class="menu-buttons" style="display: none;">
+                    <a href="#" class="menu-link"><span class="profile"><img class="icon-profile"
+                                src="img/icon-user-chat.svg">Профиль</span></a>
+                    <a href="#" class="menu-link"><span class="complain"><img class="icon-complain"
+                                src="img/icon-dislike-chat.svg">Пожаловаться</span></a>
+                    <a href="#" class="menu-link"><span class="block"><img class="icon-block"
+                                src="img/icon-block-chat.svg">Заблокировать</span></a>
+                    <a href="#" class="menu-link"><span class="delete"><img class="icon-delete"
+                                src="img/icon-delete-chat.svg">Удалить</span></a>
+                </div>
+            </div>
+            <div class="chat-content">
+                <div class="user-message">
+                    <div class="this-message">
+                        <div class="thismessage">
+                            <span class="message">Здравствуйте</span>
+                        </div>
+                        <div class="state-status">
+                            <span class="state">Прочитано</span>
+                        </div>
+                    </div>
+                    <span class="time_chat">11.01</span>
+                </div>
+                <div class="opponent-message">
+                    <div class="this-message">
+                        <div class="thismessage">
+                            <span class="message">Приветствую!</span>
+                        </div>
+                        <div class="state-status">
+                            <span class="state">Прочитано</span>
+                        </div>
+                    </div>
+                    <span class="time_chat">11.03</span>
+                </div>
+                <div class="user-message">
+                    <div class="this-message">
+                        <div class="thismessage">
+                            <span class="message">У меня вопрос</span>
+                        </div>
+                        <div class="state-status">
+                            <span class="state">Отправлено</span>
+                        </div>
+                    </div>
+                    <span class="time_chat">11.04</span>
+                </div>
+            </div>
+
+            <div class="chat-footer">
+                <textarea class="textarea" type="text" name="answer" placeholder="Введите сообщение"></textarea>
+                <div class="chat-buttons">
+                    <label class="attach">
+                        <button class="icon"></button>
+                    </label>
+                    <label class="send">
+                        <button class="icon"></button>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+    <!-- OWLCarousel -->
+    <script src="libs/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+
+    <!-- JQuery masked input -->
+    <script src="libs/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+
+        
+    <script src="./libs/avatar-generator/katweKibsletterAvatarjs.js"></script>
+
+
+    <!-- Скрипты -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>

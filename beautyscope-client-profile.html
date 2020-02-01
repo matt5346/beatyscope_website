@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Профиль клиента</title>
+
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!-- Стили-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- НАЧИНАЕТСЯ HEADER -->
+
+    <header class="header-region">
+        <div class="_container">
+            <div class="layout">
+
+                <button class="nav-toggle" id="nav-toggle" type="button">
+                    <div class="nav-toggle_item"></div>
+                </button>
+
+                <div class="logotype-region">
+                    <img class="logotype" src="img/logo.svg">
+                </div>
+                <div class="location-region">
+                    <span class="location"><i class="icon fas fa-map-marker-alt"></i>Город</span>
+                </div>
+                <div class="circles-region">
+                    <a href="#" class="blue-button section">
+                        <img class="icon" src="img/icon-hair.svg">
+                    </a>
+                    <a href="#" class="red-button section">
+                        <img class="icon" src="img/icon-cosmetics.svg">
+                    </a>
+                    <a href="#" class="yellow-button section">
+                        <img class="icon" src="img/icon-manicure.svg">
+                    </a>
+                    <a href="#" class="green-button section">
+                        <img class="icon" src="img/icon-massage.svg">
+                    </a>
+                </div>
+                <div class="buttons-region">
+                    <a href="#" class="catalog">Каталог мастеров</a>
+                    <a href="#" class="bespecialist">Стать специалистом</a>
+                </div>
+                <div class="personal-region">
+                    <div class="options-region">
+                            <div class="options_box">
+                                <img class="notif" src="img/notif.svg" alt="">
+                                <a href="#" class="heart button"><i class="icon fas fa-heart"></i></a>
+                                
+                            </div>
+
+                            <div class="options_box">
+                                <img class="notif" src="img/notif.svg" alt="">
+                                <a href="#" class="notifications button"><i class="icon fas fa-bell"></i></a>
+                                
+                            </div>
+
+                            <div class="options_box">
+                                <img class="notif" src="img/notif.svg" alt="">
+                                <a href="#" class="message button"><i class="icon fas fa-envelope"></i></a>
+                                
+                            </div>
+                    </div>
+                    <div class="profile-region">
+                        <a href="#" class="account button"><i class="icon fas fa-user-alt"></i></a>
+                        <a href="#" class="signin button">Вход</a>
+                        <a href="#" class="registration button">Регистрация</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ЗАКАНЧИВАЕТСЯ HEADER -->
+
+    <div class="profileclient-region">
+        <div class="_container">
+            <div class="layout">
+                <div class="profile-header">
+                    <div class="sections-region">
+                        <a href="#" class="myprofile section -active">Мой профиль</a>
+                        <a href="#" class="settings section">Настройки</a>
+                        <a href="#" class="history section">История записей</a>
+                        <a href="#" class="bonuses section">Мои бонусы</a>
+                    </div>
+                    <div class="clientselector-region">
+                        <a href="#" class="client">Я КЛИЕНТ</a>
+                        <a href="#" class="master">Я МАСТЕР</a>
+                    </div>
+                </div>
+                <!-- ЭТО ОКОШКО С ОТЗЫВОМ!!! -->
+                <!-- <div class="feedbackclient-region">
+                    <div class="rate-region">
+                        <img class="star" src="img/rating-star.svg">
+                        <img class="star" src="img/rating-star.svg">
+                        <img class="star" src="img/rating-star.svg">
+                        <img class="star" src="img/rating-star.svg">
+                        <img class="star" src="img/rating-star.svg">
+                    </div>
+                    <form action="" class="form">
+                        <textarea class="textarea" type="text" name="feedback"
+                            placeholder="Введите Ваш отзыв"></textarea>
+                        <input type="submit" class="submit" name="sendfeedback" value="ОТПРАВИТЬ">
+                    </form>
+                </div> -->
+                <!-- ЭТО ОКОШКО С ОТЗЫВОМ!!! -->
+                <div class="profile-content">
+                    <div class="profileclient-header">
+                        <div class="profileclient-information">
+                            <div class="profile-preview">
+                                <div class="profile-avatar">
+                                    <canvas width="80" height="80" class="user-icon" data-name="Марина"></canvas>
+                                </div>
+                                <div class="profile-title">
+                                    <div class="profile-information main">
+                                        <span class="statistics">
+                                            <img class="icon eye" src="img/icon-watch.svg">
+                                            49
+                                            <img class="icon like" src="img/icon-like.svg">
+                                            12
+                                            <span class="date">На сайте с 01.01.2019</span>
+                                        </span>
+                                        <span class="name">Марина Иванова, <span class="age">27</span></span>
+                                        <span class="status"><img class="online" src="img/icon-online.svg">online</span>
+                                    </div>
+                                </div>
+                                <div class="profile-rating">
+                                    <img class="icon" src="img/icon-star.svg">
+                                    <span class="score">4.2</span>
+                                    <span class="comments">Отзывы: <span class="amount">6</span>Выполнено: <span
+                                            class="amount">8</span></span>
+                                </div>
+                            </div>
+
+                            <div class="client-buttons">
+                                    <div class="first-row">
+                                        <a onclick="toggle(complain_region)" href="#" class="dislike"><img class="icon"
+                                                src="img/icon-dislike.svg">Пожаловаться</a>
+                                        <div id="complain_region" style="display: none;">
+                                            <span class="title">Возникли проблемы?</span>
+                                            <form action="" class="complain-form">
+                                                <textarea class="textarea" type="text" name="complain"
+                                                    placeholder="Введите причину жалобы"></textarea>
+                                                <input type="submit" class="submit" name="sendmessage" value="ОТПРАВИТЬ">
+                                            </form>
+                                        </div>
+                                        <a href="#" class="sendmessage"><img class="message" src="img/icon-message.svg"></a>
+                                    </div>
+                                </div>
+                            
+                            <div class="profile-data">
+                                <span class="adress"><img class="icon location" src="img/icon-location.svg">ул.
+                                    Тверская-Ямская,
+                                    14к3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profileclient-underline"></div>
+                    <div class="profile-description">
+                        <span class="aboutme">О себе</span>
+                        <span class="description">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами,
+                            когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который
+                            не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать
+                            типографику в деле.</span>
+                    </div>
+
+
+                    <!----------------New-mobile-rating-version----------------------->
+                     <!----------------New-mobile-rating-version----------------------->
+                      <!----------------New-mobile-rating-version----------------------->
+                      <div class="profilecomments-region">
+                            <div class="title-region">
+                                <span class="title">Отзывы</span>
+                            </div>
+                            <div class="profilecomments-slider">
+                                    <div class="comment-region">
+                                            <div class="comment-header">
+                                                <div class="title">
+                                                    <span class="name">Инна Петрова</span>
+                                                    <span class="date_comment">01.01.2019</span>
+                                                </div>
+                                                
+                                                <span class="rating"><img class="icon" src="img/icon-star.svg">4.0</span>
+    
+                                                <div class="rating_mobile">
+                                                    <h4>Брадобрей, <small>салон</small></h4>
+                                                    <span>Оценка автора: <strong>4.0</strong></span>
+                                                    <span>Рейтинг салона: <strong>4.2</strong></span>
+                                                </div>
+                                            </div>
+                                            <div class="comment-content">
+                                                <span class="content">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                                                    сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском
+                                                    языке, а начинающему оратору отточить навык публичных выступлений в домашних
+                                                    условиях.</span>
+                                            </div>
+                                        </div>
+                                        <div class="comment-region">
+                                            <div class="comment-header">
+    
+                                                <div class="title">
+                                                    <span class="name">Александра Сидорова</span>
+                                                    <span class="date_comment">01.01.2019</span>
+                                                </div>
+                                                
+                                                <span class="rating"><img class="icon" src="img/icon-star.svg">5.0</span>
+    
+                                                <div class="rating_mobile">
+                                                    <h4>Брадобрей, <small>салон</small></h4>
+                                                    <span>Оценка автора: <strong>4.0</strong></span>
+                                                    <span>Рейтинг салона: <strong>4.2</strong></span>
+                                                </div>
+                                            </div>
+                                            <div class="comment-content">
+                                                <span class="content">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                                                    сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском
+                                                    языке, а начинающему оратору отточить навык публичных выступлений в домашних
+                                                    условиях.</span>
+                                            </div>
+                                        </div>
+                                        <div class="comment-region">
+                                            <div class="comment-header">
+    
+                                                <div class="title">
+                                                    <span class="name">Анастасия Васильева</span>
+                                                    <span class="date_comment">01.01.2019</span>
+                                                </div>
+                                                
+                                                <span class="rating"><img class="icon" src="img/icon-star.svg">4.0</span>
+    
+                                                <div class="rating_mobile">
+                                                    <h4>Брадобрей, <small>салон</small></h4>
+                                                    <span>Оценка автора: <strong>4.0</strong></span>
+                                                    <span>Рейтинг салона: <strong>4.2</strong></span>
+                                                </div>
+                                            </div>
+                                            <div class="comment-content">
+                                                <span class="content">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                                                    сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском
+                                                    языке, а начинающему оратору отточить навык публичных выступлений в домашних
+                                                    условиях.</span>
+                                            </div>
+                                        </div>
+                                        <div class="comment-region">
+                                            <div class="comment-header">
+    
+                                                <div class="title">
+                                                    <span class="name">Татьяна Иванова</span>
+                                                    <span class="date_comment">01.01.2019</span>
+                                                </div>
+                                                
+                                                <span class="rating"><img class="icon" src="img/icon-star.svg">3.0</span>
+    
+                                                <div class="rating_mobile">
+                                                    <h4>Брадобрей, <small>салон</small></h4>
+                                                    <span>Оценка автора: <strong>4.0</strong></span>
+                                                    <span>Рейтинг салона: <strong>4.2</strong></span>
+                                                </div>
+                                            </div>
+                                            <div class="comment-content">
+                                                <span class="content">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                                                    сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском
+                                                    языке, а начинающему оратору отточить навык публичных выступлений в домашних
+                                                    условиях.</span>
+                                            </div>
+                                        </div>
+                            </div>
+    
+                        </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------Scrollable chat----------------->
+
+        <div class="container chat">
+            <div class="page_chat">
+                <img class="message" src="img/icon-message.svg">
+            </div>
+        </div>
+
+    <!-- Начинается футер! -->
+
+    <footer class="footer-region">
+        <div class="_container">
+            <div class="layout">
+                <div class="data-region">
+                    <div class="footer-column">
+                        <a href="#" class="connect">Подключиться как салон</a>
+                        <a href="#" class="connect">Подключиться как мастер</a>
+                        <a href="#" class="forinvestors">Инвесторам</a>
+                        <a href="#" class="franchising">Франчайзинг</a>
+                        <a href="#" class="presscenter">Пресс-центр</a>
+                    </div>
+                    <div class="footer-column">
+                        <a href="#" class="allsalons">Все салоны</a>
+                        <a href="#" class="allmasters">Все мастера</a>
+                        <a href="#" class="specialoffers">Специальные предложения</a>
+                        <a href="#" class="giftshop">Магазин подарков</a>
+                        <a href="#" class="agreement">Пользовательское соглашение</a>
+                    </div>
+                    <div class="footer-column">
+                        <a href="#" class="aboutus">О проекте</a>
+                        <a href="#" class="contactus">Связаться с нами</a>
+                        <a href="#" class="vacancy">Вакансии</a>
+                    </div>
+                </div>
+                <div class="social-region">
+                    <div class="first-row">
+                        <a href="#" class="link"><i class="icon fab fa-vk"></i></a>
+                        <a href="#" class="link"><i class="icon fab fa-facebook-f"></i></a>
+                        <a href="#" class="link"><i class="icon fab fa-odnoklassniki"></i></a>
+                    </div>
+                    <div class="second-row">
+                        <a href="#" class="link"><i class="icon fab fa-instagram"></i></a>
+                        <a href="#" class="link"><i class="icon fab fa-youtube"></i></a>
+                        <a href="#" class="link"><i class="icon fab fa-telegram-plane"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ЗАКАНЧИВАЕТСЯ ФУТЕР! -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+    <script src="./libs/avatar-generator/katweKibsletterAvatarjs.js"></script>
+
+    <!-- OWLCarousel -->
+    <script src="./libs/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+
+    <script src="./libs/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+
+    <!-- Скрипты -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script src="./libs/avatar-generator/katweKibsletterAvatarjs.js"></script>
+
+
+</html>

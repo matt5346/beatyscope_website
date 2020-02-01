@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Онлайн монитор</title>
+
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!-- Стили-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+
+</head>
+
+<body>
+
+    <!-- НАЧИНАЕТСЯ HEADER -->
+
+    <header class="header-region">
+        <div class="_container">
+            <div class="layout">
+
+                <button class="nav-toggle" id="nav-toggle" type="button">
+                    <div class="nav-toggle_item"></div>
+                </button>
+
+                <div class="logotype-region">
+                    <img class="logotype" src="img/logo.svg">
+                </div>
+                <div class="location-region">
+                    <span class="location"><i class="icon fas fa-map-marker-alt"></i>Город</span>
+                </div>
+                <div class="circles-region">
+                    <a href="#" class="blue-button section">
+                        <img class="icon" src="img/icon-hair.svg">
+                    </a>
+                    <a href="#" class="red-button section">
+                        <img class="icon" src="img/icon-cosmetics.svg">
+                    </a>
+                    <a href="#" class="yellow-button section">
+                        <img class="icon" src="img/icon-manicure.svg">
+                    </a>
+                    <a href="#" class="green-button section">
+                        <img class="icon" src="img/icon-massage.svg">
+                    </a>
+                </div>
+                <div class="buttons-region">
+                    <a href="#" class="catalog">Каталог мастеров</a>
+                    <a href="#" class="bespecialist">Стать специалистом</a>
+                </div>
+                <div class="personal-region">
+                        <div class="options-region">
+                            <div class="options_box">
+                                <img class="notif" src="img/notif.svg" alt="">
+                                <a href="#" class="heart button"><i class="icon fas fa-heart"></i></a>
+                                
+                            </div>
+
+                            <div class="options_box">
+                                <img class="notif" src="img/notif.svg" alt="">
+                                <a href="#" class="notifications button"><i class="icon fas fa-bell"></i></a>
+                                
+                            </div>
+
+                            <div class="options_box">
+                                <img class="notif" src="img/notif.svg" alt="">
+                                <a href="#" class="message button"><i class="icon fas fa-envelope"></i></a>
+                                
+                            </div>
+                        </div>
+                    <div class="profile-region">
+                        <a href="#" class="account button"><i class="icon fas fa-user-alt"></i></a>
+                        <a href="#" class="signin button">Вход</a>
+                        <a href="#" class="registration button">Регистрация</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ЗАКАНЧИВАЕТСЯ HEADER -->
+    <div class="layout monitor_box">
+        <div class="profile-header">
+            <div class="sections-region">
+                <a href="#" class="myprofile section">Мой профиль</a>
+                <a href="#" class="settings section">Настройки</a>
+                <a href="#" class="offers section">Услуги</a>
+                <a href="#" class="shedule section ">График</a>
+                <a href="#" class="specialoffers section">Акции</a>
+                <a href="#" class="onlinemonitor section -active">Онлайн-монитор</a>
+                <a href="#" class="howtogetmore section">Как получать больше?</a>
+            </div>
+            <div class="masterselector-region">
+                <a href="#" class="client">Я КЛИЕНТ</a>
+                <a href="#" class="master">Я МАСТЕР</a>
+            </div>
+        </div>
+        <div class="monitor">
+            <div class="-view">
+                <div class="select_box">
+
+                    <span>Отображать от:</span>
+
+                    <select class="select_item" name="" id="">
+                        <option value="0">26.07.2019</option>
+                        <option value="1">26.07.2020</option>
+                        <option value="2">26.07.2021</option>
+                    </select>
+                </div>
+
+                <div class="select_box">
+
+                    <span>Отображать от:</span>
+
+                    <select class="select_item" name="" id="">
+                        <option value="0">26.07.2019</option>
+                        <option value="1">26.07.2020</option>
+                        <option value="2">26.07.2021</option>
+                    </select>
+                </div>
+
+                <div class="select_box">
+
+                    <span>Выводить по:</span>
+
+                    <select class="select_item" name="" id="">
+                        <option value="0">10</option>
+                        <option value="1">15</option>
+                        <option value="2">20</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="scroll-wrapper">
+                <ul class="scroll-head" style="height: 40px;">
+                    <li></li>
+                    <li>Номер <br> заказа</li>
+                    <li>Дата, время</li>
+                    <li>Услуга</li>
+                    <li>Статус</li>
+                    <li>Клиент</li>
+                    <li>Тел. номер</li>
+                    <li>Комментарий</li>
+                    <li></li>
+                </ul>
+                <div class="content_box">
+                    <ul class="scroll-content active-scroll-content">
+                        <li>1</li>
+                        <li>П-61</li>
+                        <li>27-07-2018 18:34</li>
+                        <li>Миостимуляция</li>
+                        <li>Новый</li>
+                        <li><a href="#">Наталья А.</a></li>
+                        <li><a href="#">примите заявку</a> <img src="img/Vector.svg" alt=""></li>
+                        <li>купить расходники</li>
+                        
+
+                    </ul>
+
+                    <div class="fixed" id="fixed-active">
+                            <img src="img/ok-icon-white.svg" alt=""></a><a href="#"><img src="img/cancel-icon-white.svg" alt=""></a><a href="#"><img src="img/message-icon-white.svg" alt="" ></a>
+                    </div>
+
+                </div>
+
+                <div class="content_box">
+
+                    <ul class="scroll-content">
+                        <li>2</li>
+                        <li>М-122</li>
+                        <li>27-07-2018 18:39</li>
+                        <li>Дарсенвализация</li>
+                        <li>Выполняется</li>
+                        <li><a href="#">Мария В.</a></li>
+                        <li>+7 (999) 765-43-21 <img style="opacity: 0.3;" src="img/Vector-gray.svg" alt=""></li>
+                        <li>не забыть инструмент</li>
+                        
+                    </ul>
+
+                    <div class="fixed">
+                        <img src="img/ok-icon-color.svg" alt=""></a><a href="#"><img src="img/cancel-icon-gray.svg" alt=""></a><a href="#"><img src="img/message-icon-color.svg" alt="" ></a>
+                    </div>
+
+                </div>
+
+                <div class="content_box">
+
+                    <ul class="scroll-content">
+                            <li>3</li>
+                            <li>К-12</li>
+                            <li>27-07-2018 18:43</li>
+                            <li>Лазерная шлифовка лица</li>
+                            <li id="done">Завершён</li>
+                            <li><a href="#">Владислав С.</a></li>
+                            <li>+7 (999) 172-63-54 <img style="opacity: 0.3;" src="img/message-gray.svg" alt=""></li>
+                            <li>въезд через шлагбаум</li>
+                            
+                            
+                    </ul>
+
+                    <div class="fixed">
+                        <a href="#"><img src="img/ok-icon-gray.svg" alt=""></a><a href="#"><img src="img/cancel-icon-gray.svg" alt=""></a><a href="#"><img src="img/message-icon-gray.svg" alt="" ></a>
+                    </div>
+
+                </div>
+
+                <div class="content_box">
+                        <ul class="scroll-content canceled">
+                            <li>4</li>
+                            <li>К-87</li>
+                            <li>27-07-2018 18:45</li>
+                            <li>Миостимуляция</li>
+                            <li id="canceled">Отменён</li>
+                            <li><a href="#">Зигмунд Ф.</a></li>
+                            <li>+7 (999) 135-24-67 <img style="opacity: 0.3;" src="img/watsapp-gray.svg" alt=""></li>
+                            <li><img src="img/vector-plus-gray.png" alt="" ></li>
+                            
+
+        
+                        </ul>
+
+                        <div class="fixed" id="fixed-canceled">
+                            <a href="#"><img src="img/ok-icon-gray.svg" alt=""></a>
+                            <a href="#"><img src="img/cancel-icon-gray.svg" alt=""></a>
+                            <a href="#"><img src="img/message-icon-gray.svg" alt="" ></a>
+                        </div>
+                </div>
+
+                <div class="content_box">
+                        <ul class="scroll-content">
+                            <li>5</li>
+                            <li>П-003</li>
+                            <li>27-07-2018 18:37</li>
+                            <li>Дарсенвализация</li>
+                            <li>Выполняется</li>
+                            <li><a href="#">Алина К.</a></li>
+                            <li>+7 (999) 123-45-67 <img style="opacity: 0.3;" src="img/Vector-gray.svg" alt=""></li>
+                            <li><img src="img/vector-plus.png" alt="" ></li>
+                            
+                            
+                        </ul>
+
+                        <div class="fixed">
+                            <a href="#"><img src="img/ok-icon-color.svg" alt=""></a><a href="#"><img src="img/cancel-icon-gray.svg" alt=""></a><a href="#"><img src="img/message-icon-color.svg" alt="" ></a>
+                        </div>
+
+                </div>
+
+                <div class="content_box">
+
+                        <ul class="scroll-content">
+                            <li>6</li>
+                            <li>К-676</li>
+                            <li>27-07-2018 18:43</li>
+                            <li>Лазерная шлифовка лица</li>
+                            <li id="done">Завершён</li>
+                            <li><a href="#">Фарида З.</a></li>
+                            <li>+7 (999) 172-63-54 <img style="opacity: 0.3;" src="img/watsapp-gray.svg" alt=""></li>
+                            <li>доп номер +7 (999) 172-63-54</li>
+                            
+                            
+                        </ul>
+
+                        <div class="fixed">
+                            <a href="#"><img src="img/ok-icon-gray.svg" alt=""></a><a href="#"><img src="img/cancel-icon-gray.svg" alt=""></a><a href="#"><img src="img/message-icon-gray.svg" alt="" ></a>
+                        </div>
+
+                </div>
+
+
+                <div class="content_box">
+                        <ul class="scroll-content">
+                            <li>7</li>
+                            <li>М-2</li>
+                            <li>27-07-2018 18:45</li>
+                            <li>Дарсенвализация</li>
+                            <li>Принят</li>
+                            <li><a href="#">Ибрагим У.</a></li>
+                            <li>+7 (999) 135-24-67 <img style="opacity: 0.3;" src="img/message-gray.svg" alt=""></li>
+                            <li><img src="img/vector-plus.png" alt="" ></li>
+                            
+                           
+                        </ul>
+
+                        <div class="fixed">
+                            <a href="#"><img src="img/ok-icon-gray.svg" alt=""></a><a href="#"><img src="img/cancel-icon-color.svg" alt=""></a><a href="#"><img src="img/message-icon-color.svg" alt="" ></a>
+                        </div>
+                </div>
+
+                <div class="content_box">
+
+                        <ul class="scroll-content">
+                            <li>7</li>
+                            <li>М-2</li>
+                            <li>27-07-2018 18:45</li>
+                            <li>Дарсенвализация</li>
+                            <li>Принят</li>
+                            <li><a href="#">Ибрагим У.</a></li>
+                            <li>+7 (999) 135-24-67 <img style="opacity: 0.3;" src="img/message-gray.svg" alt=""></li>
+                            <li><img src="img/vector-plus.png" alt="" ></li>
+                            
+                            
+                        </ul>
+
+                        <div class="fixed">
+                            <a href="#"><img src="img/ok-icon-gray.svg" alt=""></a><a href="#"><img src="img/cancel-icon-color.svg" alt=""></a><a href="#"><img src="img/message-icon-color.svg" alt="" ></a>
+                        </div>
+                </div>
+
+
+                <div class="content_box">
+                        <ul class="scroll-content">
+                            <li>7</li>
+                            <li>М-2</li>
+                            <li>27-07-2018 18:45</li>
+                            <li>Дарсенвализация</li>
+                            <li>Принят</li>
+                            <li><a href="#">Ибрагим У.</a></li>
+                            <li>+7 (999) 135-24-67 <img style="opacity: 0.3;" src="img/message-gray.svg" alt=""></li>
+                            <li><img src="img/vector-plus.png" alt="" ></li>
+                            
+                            
+                        </ul>
+
+                        <div class="fixed">
+                            <a href="#"><img src="img/ok-icon-gray.svg" alt=""></a><a href="#"><img src="img/cancel-icon-color.svg" alt=""></a><a href="#"><img src="img/message-icon-color.svg" alt="" ></a>
+                        </div>
+                </div>
+
+                <div class="content_box">
+
+                        <ul class="scroll-content">
+                            <li>7</li>
+                            <li>М-2</li>
+                            <li>27-07-2018 18:45</li>
+                            <li>Дарсенвализация</li>
+                            <li>Принят</li>
+                            <li><a href="#">Ибрагим У.</a></li>
+                            <li>+7 (999) 135-24-67 <img style="opacity: 0.3;" src="img/message-gray.svg" alt=""></li>
+                            <li><img src="img/vector-plus.png" alt="" ></li>
+                            
+                            
+                        </ul>
+
+                        <div class="fixed">
+                            <a href="#"><img src="img/ok-icon-gray.svg" alt=""></a><a href="#"><img src="img/cancel-icon-color.svg" alt=""></a><a href="#"><img src="img/message-icon-color.svg" alt="" ></a>
+                        </div>
+                </div>
+
+                <div class="content_box">
+                        <ul class="scroll-content">
+                            <li>7</li>
+                            <li>М-2</li>
+                            <li>27-07-2018 18:45</li>
+                            <li>Дарсенвализация</li>
+                            <li>Принят</li>
+                            <li><a href="#">Ибрагим У.</a></li>
+                            <li>+7 (999) 135-24-67 <img style="opacity: 0.3;" src="img/message-gray.svg" alt=""></li>
+                            <li><img src="img/vector-plus.png" alt="" ></li>
+                            
+                            
+                        </ul>
+
+                        <div class="fixed">
+                            <a href="#"><img src="img/ok-icon-gray.svg" alt=""></a><a href="#"><img src="img/cancel-icon-color.svg" alt=""></a><a href="#"><img src="img/message-icon-color.svg" alt="" ></a>
+                        </div>
+                </div>
+
+                <div class="content_box">
+                        <ul class="scroll-content">
+                            <li>7</li>
+                            <li>М-2</li>
+                            <li>27-07-2018 18:45</li>
+                            <li>Дарсенвализация</li>
+                            <li>Принят</li>
+                            <li><a href="#">Ибрагим У.</a></li>
+                            <li>+7 (999) 135-24-67 <img style="opacity: 0.3;" src="img/message-gray.svg" alt=""></li>
+                            <li><img src="img/vector-plus.png" alt="" ></li>
+                            
+                            
+                        </ul>
+
+                        <div class="fixed">
+                            <a href="#"><img src="img/ok-icon-gray.svg" alt=""></a><a href="#"><img src="img/cancel-icon-color.svg" alt=""></a><a href="#"><img src="img/message-icon-color.svg" alt="" ></a>
+                        </div>
+                </div>
+
+                <div class="content_box">
+                        <ul class="scroll-content">
+                            <li>7</li>
+                            <li>М-2</li>
+                            <li>27-07-2018 18:45</li>
+                            <li>Дарсенвализация</li>
+                            <li>Принят</li>
+                            <li><a href="#">Ибрагим У.</a></li>
+                            <li>+7 (999) 135-24-67 <img style="opacity: 0.3;" src="img/message-gray.svg" alt=""></li>
+                            <li><img src="img/vector-plus.png" alt="" ></li>
+                            
+                            
+                        </ul>
+
+                        <div class="fixed">
+                            <a href="#"><img src="img/ok-icon-gray.svg" alt=""></a><a href="#"><img src="img/cancel-icon-color.svg" alt=""></a><a href="#"><img src="img/message-icon-color.svg" alt="" ></a>
+                        </div>
+                </div>
+
+                <div class="content_box">
+                        <ul class="scroll-content">
+                            <li>7</li>
+                            <li>М-2</li>
+                            <li>27-07-2018 18:45</li>
+                            <li>Дарсенвализация</li>
+                            <li>Принят</li>
+                            <li><a href="#">Ибрагим У.</a></li>
+                            <li>+7 (999) 135-24-67 <img style="opacity: 0.3;" src="img/message-gray.svg" alt=""></li>
+                            <li><img src="img/vector-plus.png" alt="" ></li>
+                            
+                            
+                        </ul>
+
+                        <div class="fixed">
+                            <a href="#"><img src="img/ok-icon-gray.svg" alt=""></a><a href="#"><img src="img/cancel-icon-color.svg" alt=""></a><a href="#"><img src="img/message-icon-color.svg" alt="" ></a>
+                        </div>
+                </div>
+
+
+                <div class="content_box">
+                        <ul class="scroll-content">
+                            <li>7</li>
+                            <li>М-2</li>
+                            <li>27-07-2018 18:45</li>
+                            <li>Дарсенвализация</li>
+                            <li>Принят</li>
+                            <li><a href="#">Ибрагим У.</a></li>
+                            <li>+7 (999) 135-24-67 <img style="opacity: 0.3;" src="img/message-gray.svg" alt=""></li>
+                            <li><img src="img/vector-plus.png" alt="" ></li>
+                            
+                            
+                        </ul>
+
+                        <div class="fixed">
+                            <a href="#"><img src="img/ok-icon-gray.svg" alt=""></a><a href="#"><img src="img/cancel-icon-color.svg" alt=""></a><a href="#"><img src="img/message-icon-color.svg" alt="" ></a>
+                        </div>
+                </div>
+
+                <div class="content_box">
+                        <ul class="scroll-content">
+                            <li>7</li>
+                            <li>М-2</li>
+                            <li>27-07-2018 18:45</li>
+                            <li>Дарсенвализация</li>
+                            <li>Принят</li>
+                            <li><a href="#">Ибрагим У.</a></li>
+                            <li>+7 (999) 135-24-67 <img style="opacity: 0.3;" src="img/message-gray.svg" alt=""></li>
+                            <li><img src="img/vector-plus.png" alt="" ></li>
+                            
+
+                        </ul>
+
+                        <div class="fixed">
+                            <a href="#"><img src="img/ok-icon-gray.svg" alt=""></a><a href="#"><img src="img/cancel-icon-color.svg" alt=""></a><a href="#"><img src="img/message-icon-color.svg" alt="" ></a>
+                        </div>
+                </div>
+
+                <div class="content_box">
+                        <ul class="scroll-content">
+                            <li>7</li>
+                            <li>М-2</li>
+                            <li>27-07-2018 18:45</li>
+                            <li>Дарсенвализация</li>
+                            <li>Принят</li>
+                            <li><a href="#">Ибрагим У.</a></li>
+                            <li>+7 (999) 135-24-67 <img style="opacity: 0.3;" src="img/message-gray.svg" alt=""></li>
+                            <li><img src="img/vector-plus.png" alt="" ></li>
+                            
+                            
+                        </ul>
+
+                        <div class="fixed">
+                            <a href="#"><img src="img/ok-icon-gray.svg" alt=""></a><a href="#"><img src="img/cancel-icon-color.svg" alt=""></a><a href="#"><img src="img/message-icon-color.svg" alt="" ></a>
+                        </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Начинается футер! -->
+
+    <footer class="footer-region">
+        <div class="_container">
+            <div class="layout">
+                <div class="data-region">
+                    <div class="footer-column">
+                        <a href="#" class="connect">Подключиться как салон</a>
+                        <a href="#" class="connect">Подключиться как мастер</a>
+                        <a href="#" class="forinvestors">Инвесторам</a>
+                        <a href="#" class="franchising">Франчайзинг</a>
+                        <a href="#" class="presscenter">Пресс-центр</a>
+                    </div>
+                    <div class="footer-column">
+                        <a href="#" class="allsalons">Все салоны</a>
+                        <a href="#" class="allmasters">Все мастера</a>
+                        <a href="#" class="specialoffers">Специальные предложения</a>
+                        <a href="#" class="giftshop">Магазин подарков</a>
+                        <a href="#" class="agreement">Пользовательское соглашение</a>
+                    </div>
+                    <div class="footer-column">
+                        <a href="#" class="aboutus">О проекте</a>
+                        <a href="#" class="contactus">Связаться с нами</a>
+                        <a href="#" class="vacancy">Вакансии</a>
+                    </div>
+                </div>
+                <div class="social-region">
+                    <div class="first-row">
+                        <a href="#" class="link"><i class="icon fab fa-vk"></i></a>
+                        <a href="#" class="link"><i class="icon fab fa-facebook-f"></i></a>
+                        <a href="#" class="link"><i class="icon fab fa-odnoklassniki"></i></a>
+                    </div>
+                    <div class="second-row">
+                        <a href="#" class="link"><i class="icon fab fa-instagram"></i></a>
+                        <a href="#" class="link"><i class="icon fab fa-youtube"></i></a>
+                        <a href="#" class="link"><i class="icon fab fa-telegram-plane"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Заканчивается футер -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+    <!-- OWLCarousel -->
+    <script src="./libs/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+
+    <!-- JQuery masked input -->
+    <script src="./libs/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+    
+    <script src="./libs/avatar-generator/katweKibsletterAvatarjs.js"></script>
+
+    <!-- Скрипты -->
+    <script type="text/javascript" src="./js/script.js"></script>
+
+  
+</body></html>

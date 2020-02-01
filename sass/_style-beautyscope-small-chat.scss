@@ -1,0 +1,194 @@
+.smallchat-region {
+    width: 65%;
+    max-width: 726px;
+    min-width: 300px;
+    max-height: 480px;
+
+    .sendmessage {
+        display: none;
+        position: absolute;
+        z-index: 100;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: 10px;
+        background-color: #448EE5;
+        border-radius: 50%;
+        line-height: 0;
+        width: 48px;
+        height: 48px;
+        bottom: 90px;
+        right: 15px;
+        margin-right: 0;
+    }
+
+    .avatar {
+        width: 30px;
+        height: 30px;
+    }
+
+    .user-name {
+        position: relative;
+    }
+
+    .online {
+        position: absolute;
+        top: 50%;
+        right: -10%;
+    }
+
+    .chat-content {
+        overflow: auto;
+    }
+
+    .user-message,
+    .opponent-message {
+        margin-bottom: 20px;
+    }
+
+    .textarea {
+        max-width: 100%;
+        min-height: 34px;
+        font-weight: 300;
+        font-size: 13px;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+        outline: none;
+    }
+
+    .attach,
+    .send {
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .attach {
+        top: 45%
+    }
+
+    .send {
+        right: 8%;
+        top: 40%;
+    }
+
+    .chat-header {
+        align-items: center;
+    }
+
+    .chat-footer {
+        display: flex;
+        min-height: 54px;
+    }
+}
+
+.smallchat-region {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+
+    .chat-buttons {
+        height: 54px;
+        width: 63px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        margin-top: -5px;
+        margin-right: 8px
+    }
+}
+
+.chat-buttons {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    right: 1%;
+    top: 45%;
+
+    button {
+        opacity: 0;
+    }
+
+    .attach {
+        width: 16px;
+        height: 16px;
+        background: url(../img/icon-attach.svg) no-repeat;
+        cursor: pointer;
+    }
+
+    .send {
+        width: 20px;
+        height: 20px;
+        background: url(../img/icon-send.svg) no-repeat;
+        cursor: pointer;
+    }
+
+    .attach,
+    .separator,
+    .send {
+        margin-right: 10px;
+    }
+}
+
+.menu-region {
+    &.small {
+        margin-left: auto;
+    }
+}
+
+
+
+.sidebar_btn_small {
+
+    & .sendmessage {
+        display: flex;
+    }
+
+    & img.open_cross {
+        display: none;
+    }
+
+    &.active {
+
+        & img.open_cross {
+            display: inline-block;
+        }
+
+        & .sendmessage {
+            display: none;
+        }
+    }
+}
+
+.sidebar_btn_small {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    margin-left: 5;
+    margin-right: 0;
+        
+    &.active {
+
+        img {
+            &.close {
+                display: inline-block;
+            }
+
+            &.open {
+                display: none;
+            }
+        }
+        
+    }
+    
+
+}
+
+.smallchat-region {
+    & canvas {
+        &.user-icon {
+            width: 30px!important;
+            height: 30px!important;
+        }
+    }
+    
+}

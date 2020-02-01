@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>График</title>
+
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!-- Стили-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript">
+        function openbox(id) {
+            display = document.getElementById(id).style.display;
+
+            if (display == 'none') {
+                document.getElementById(id).style.display = 'block';
+            } else {
+                document.getElementById(id).style.display = 'none';
+            }
+        }
+
+        function change(i, x) {
+            var elem = document.getElementById("replace-me");
+            var d = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+            var m = ['Сентября', 'Отктября', 'Ноября'];
+            elem.innerHTML = d[i] +' '+ m[x]+' 2019';
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <!-- НАЧИНАЕТСЯ HEADER -->
+
+    <header class="header-region">
+        <div class="_container">
+            <div class="layout">
+
+                <button class="nav-toggle" id="nav-toggle" type="button">
+                    <div class="nav-toggle_item"></div>
+                </button>
+
+                <div class="logotype-region">
+                    <img class="logotype" src="img/logo.svg">
+                </div>
+                <div class="location-region">
+                    <span class="location"><i class="icon fas fa-map-marker-alt"></i>Город</span>
+                </div>
+                <div class="circles-region">
+                    <a href="#" class="blue-button section">
+                        <img class="icon" src="img/icon-hair.svg">
+                    </a>
+                    <a href="#" class="red-button section">
+                        <img class="icon" src="img/icon-cosmetics.svg">
+                    </a>
+                    <a href="#" class="yellow-button section">
+                        <img class="icon" src="img/icon-manicure.svg">
+                    </a>
+                    <a href="#" class="green-button section">
+                        <img class="icon" src="img/icon-massage.svg">
+                    </a>
+                </div>
+                <div class="buttons-region">
+                    <a href="#" class="catalog">Каталог мастеров</a>
+                    <a href="#" class="bespecialist">Стать специалистом</a>
+                </div>
+                <div class="personal-region">
+                        <div class="options-region">
+                            <div class="options_box">
+                                <img class="notif" src="img/notif.svg" alt="">
+                                <a href="#" class="heart button"><i class="icon fas fa-heart"></i></a>
+                                
+                            </div>
+
+                            <div class="options_box">
+                                <img class="notif" src="img/notif.svg" alt="">
+                                <a href="#" class="notifications button"><i class="icon fas fa-bell"></i></a>
+                                
+                            </div>
+
+                            <div class="options_box">
+                                <img class="notif" src="img/notif.svg" alt="">
+                                <a href="#" class="message button"><i class="icon fas fa-envelope"></i></a>
+                                
+                            </div>
+                        </div>
+                    <div class="profile-region">
+                        <a href="#" class="account button"><i class="icon fas fa-user-alt"></i></a>
+                        <a href="#" class="signin button">Вход</a>
+                        <a href="#" class="registration button">Регистрация</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ЗАКАНЧИВАЕТСЯ HEADER -->
+    <div class="_container">
+        <div class="layout schedule">
+            <div class="profile-header">
+                <div class="sections-region">
+                    <a href="#" class="myprofile section">Мой профиль</a>
+                    <a href="#" class="settings section">Настройки</a>
+                    <a href="#" class="offers section">Услуги</a>
+                    <a href="#" class="shedule section -active">График</a>
+                    <a href="#" class="specialoffers section">Акции</a>
+                    <a href="#" class="onlinemonitor section">Онлайн-монитор</a>
+                    <a href="#" class="howtogetmore section">Как получать больше?</a>
+                </div>
+                <div class="masterselector-region">
+                    <a href="#" class="client">Я КЛИЕНТ</a>
+                    <a href="#" class="master">Я МАСТЕР</a>
+                </div>
+            </div>
+
+            <div class="schedule_box">
+                    <div class="month">
+                            <div class="month-header">
+                                <ul>
+                                    <li>Сентябрь 2019</li>
+                                </ul>
+                                <ul class="weekdays">
+                                    <li>ПН</li>
+                                    <li>ВТ</li>
+                                    <li>СР</li>
+                                    <li>ЧТ</li>
+                                    <li>ПТ</li>
+                                    <li>СБ</li>
+                                    <li>ВС</li>
+                                </ul>
+                            </div>
+                            <ul class="days">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li><a class="weekend" href="#" onclick="change(1, 0); openbox('box'); return false">1</a></li>
+                                <li><a href="#" onclick="change(2, 0); openbox('box'); return false">2</a></li>
+                                <li><a href="#" onclick="change(3, 0); openbox('box'); return false">3</a></li>
+                                <li><a href="#" onclick="change(4, 0); openbox('box'); return false">4</a></li>
+                                <li><a href="#" onclick="change(5, 0); openbox('box'); return false">5</a></li>
+                                <li><a href="#" onclick="change(6, 0); openbox('box'); return false">6</a></li>
+                                <li><a class="weekend" href="#" onclick="change(7, 0); openbox('box'); return false">7</a></li>
+                                <li><a class="weekend" href="#" onclick="change(8, 0); openbox('box'); return false">8</a></li>
+                                <li><a href="#" onclick="change(9, 0); openbox('box'); return false">9</a></li>
+                                <li><a class="active" href="#" onclick="change(10, 0); openbox('box'); return false">10</a></li>
+                                <li><a href="#" onclick="change(11, 0); openbox('box'); return false">11</a></li>
+                                <li><a href="#" onclick="change(12, 0); openbox('box'); return false">12</a></li>
+                                <li><a href="#" onclick="change(13, 0); openbox('box'); return false">13</a></li>
+                                <li><a class="weekend" href="#" onclick="change(14, 0); openbox('box'); return false">14</a></li>
+                                <li><a class="weekend" href="#" onclick="change(15, 0); openbox('box'); return false">15</a></li>
+                                <li><a href="#" onclick="change(16, 0); openbox('box'); return false">16</a></li>
+                                <li><a href="#" onclick="change(17, 0); openbox('box'); return false">17</a></li>
+                                <li><a href="#" onclick="change(18, 0); openbox('box'); return false">18</a></li>
+                                <li><a href="#" onclick="change(19, 0); openbox('box'); return false">19</a></li>
+                                <li><a href="#" onclick="change(20, 0); openbox('box'); return false">20</a></li>
+                                <li><a class="weekend" href="#" onclick="change(21, 0); openbox('box'); return false">21</a></li>
+                                <li><a class="weekend" href="#" onclick="change(22, 0); openbox('box'); return false">22</a></li>
+                                <li><a href="#" onclick="change(23, 0); openbox('box'); return false">23</a></li>
+                                <li><a href="#" onclick="change(24, 0); openbox('box'); return false">24</a></li>
+                                <li><a href="#" onclick="change(25, 0); openbox('box'); return false">25</a></li>
+                                <li><a href="#" onclick="change(26, 0); openbox('box'); return false">26</a></li>
+                                <li><a href="#" onclick="change(27, 0); openbox('box'); return false">27</a></li>
+                                <li><a class="weekend" href="#" onclick="change(28, 0); openbox('box'); return false">28</a></li>
+                                <li><a class="weekend" href="#" onclick="change(29, 0); openbox('box'); return false">29</a></li>
+                                <li><a href="#" onclick="change(30, 0); openbox('box'); return false">30</a></li>
+                            </ul>
+                        </div>
+                        <div class="month">
+                            <div class="month-header">
+                                <ul>
+                                    <li>Октябрь 2019</li>
+                                </ul>
+                                <ul class="weekdays">
+                                    <li>ПН</li>
+                                    <li>ВТ</li>
+                                    <li>СР</li>
+                                    <li>ЧТ</li>
+                                    <li>ПТ</li>
+                                    <li>СБ</li>
+                                    <li>ВС</li>
+                                </ul>
+                            </div>
+                            <ul class="days">
+                                <li></li>
+                                <li><a href="#" onclick="change(1, 1); openbox('box'); return false">1</a></li>
+                                <li><a href="#" onclick="change(2, 1); openbox('box'); return false">2</a></li>
+                                <li><a href="#" onclick="change(3, 1); openbox('box'); return false">3</a></li>
+                                <li><a href="#" onclick="change(4, 1); openbox('box'); return false">4</a></li>
+                                <li><a class="weekend" href="#" onclick="change(5, 1); openbox('box'); return false">5</a></li>
+                                <li><a class="weekend" href="#" onclick="change(6, 1); openbox('box'); return false">6</a></li>
+                                <li><a href="#" onclick="change(7, 1); openbox('box'); return false">7</a></li>
+                                <li><a href="#" onclick="change(8, 1); openbox('box'); return false">8</a></li>
+                                <li><a href="#" onclick="change(9, 1); openbox('box'); return false">9</a></li>
+                                <li><a href="#" onclick="change(10, 1); openbox('box'); return false">10</a></li>
+                                <li><a href="#" onclick="change(11, 1); openbox('box'); return false">11</a></li>
+                                <li><a class="weekend" href="#" onclick="change(12, 1); openbox('box'); return false">12</a></li>
+                                <li><a class="weekend" href="#" onclick="change(13, 1); openbox('box'); return false">13</a></li>
+                                <li><a href="#" onclick="change(14, 1); openbox('box'); return false">14</a></li>
+                                <li><a class="active" href="#" onclick="change(15, 1); openbox('box'); return false">15</a></li>
+                                <li><a href="#" onclick="change(16, 1); openbox('box'); return false">16</a></li>
+                                <li><a href="#" onclick="change(17, 1); openbox('box'); return false">17</a></li>
+                                <li><a href="#" onclick="change(18, 1); openbox('box'); return false">18</a></li>
+                                <li><a class="weekend" href="#" onclick="change(19, 1); openbox('box'); return false">19</a></li>
+                                <li><a class="weekend" href="#" onclick="change(20, 1); openbox('box'); return false">20</a></li>
+                                <li><a href="#" onclick="change(21, 1); openbox('box'); return false">21</a></li>
+                                <li><a href="#" onclick="change(22, 1); openbox('box'); return false">22</a></li>
+                                <li><a href="#" onclick="change(23, 1); openbox('box'); return false">23</a></li>
+                                <li><a href="#" onclick="change(24, 1); openbox('box'); return false">24</a></li>
+                                <li><a href="#" onclick="change(25, 1); openbox('box'); return false">25</a></li>
+                                <li><a class="weekend" href="#" onclick="change(26, 1); openbox('box'); return false">26</a></li>
+                                <li><a class="weekend" href="#" onclick="change(27, 1); openbox('box'); return false">27</a></li>
+                                <li><a href="#" onclick="change(28, 1); openbox('box'); return false">28</a></li>
+                                <li><a href="#" onclick="change(29, 1); openbox('box'); return false">29</a></li>
+                                <li><a href="#" onclick="change(30, 1); openbox('box'); return false">30</a></li>
+                                <li><a href="#" onclick="change(31, 1); openbox('box'); return false">31</a></li>
+                            </ul>
+                        </div>
+                        <div class="month">
+                            <div class="month-header">
+                                <ul>
+                                    <li>Ноябрь 2019</li>
+                                </ul>
+                                <ul class="weekdays">
+                                    <li>ПН</li>
+                                    <li>ВТ</li>
+                                    <li>СР</li>
+                                    <li>ЧТ</li>
+                                    <li>ПТ</li>
+                                    <li>СБ</li>
+                                    <li>ВС</li>
+                                </ul>
+                            </div>
+                            <ul class="days">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li><a href="#" onclick="change(1, 2); openbox('box'); return false">1</a></li>
+                                <li><a class="weekend" href="#" onclick="change(2, 2); openbox('box'); return false">2</a></li>
+                                <li><a class="weekend" href="#" onclick="change(3, 2); openbox('box'); return false">3</a></li>
+                                <li><a href="#" onclick="change(4, 2); openbox('box'); return false">4</a></li>
+                                <li><a href="#" onclick="change(5, 2); openbox('box'); return false">5</a></li>
+                                <li><a href="#" onclick="change(6, 2); openbox('box'); return false">6</a></li>
+                                <li><a href="#" onclick="change(7, 2); openbox('box'); return false">7</a></li>
+                                <li><a href="#" onclick="change(8, 2); openbox('box'); return false">8</a></li>
+                                <li><a class="weekend" href="#" onclick="change(9, 2); openbox('box'); return false">9</a></li>
+                                <li><a class="weekend" href="#" onclick="change(10, 2); openbox('box'); return false">10</a></li>
+                                <li><a href="#" onclick="change(11, 2); openbox('box'); return false">11</a></li>
+                                <li><a class="active" href="#" onclick="change(12, 2); openbox('box'); return false">12</a></li>
+                                <li><a href="#" onclick="change(13, 2); openbox('box'); return false">13</a></li>
+                                <li><a href="#" onclick="change(14, 2); openbox('box'); return false">14</a></li>
+                                <li><a href="#" onclick="change(15, 2); openbox('box'); return false">15</a></li>
+                                <li><a class="weekend" href="#" onclick="change(16, 2); openbox('box'); return false">16</a></li>
+                                <li><a class="weekend" href="#" onclick="change(17, 2); openbox('box'); return false">17</a></li>
+                                <li><a href="#" onclick="change(18, 2); openbox('box'); return false">18</a></li>
+                                <li><a href="#" onclick="change(19, 2); openbox('box'); return false">19</a></li>
+                                <li><a href="#" onclick="change(20, 2); openbox('box'); return false">20</a></li>
+                                <li><a href="#" onclick="change(21, 2); openbox('box'); return false">21</a></li>
+                                <li><a href="#" onclick="change(22, 2); openbox('box'); return false">22</a></li>
+                                <li><a class="weekend" href="#" onclick="change(23, 2); openbox('box'); return false">23</a></li>
+                                <li><a class="weekend" href="#" onclick="change(24, 2); openbox('box'); return false">24</a></li>
+                                <li><a href="#" onclick="change(25, 2); openbox('box'); return false">25</a></li>
+                                <li><a href="#" onclick="change(26, 2); openbox('box'); return false">26</a></li>
+                                <li><a href="#" onclick="change(27, 2); openbox('box'); return false">27</a></li>
+                                <li><a href="#" onclick="change(28, 2); openbox('box'); return false">28</a></li>
+                                <li><a href="#" onclick="change(29, 2); openbox('box'); return false">29</a></li>
+                                <li><a class="weekend" href="#" onclick="change(30, 2); openbox('box'); return false">30</a></li>
+                            </ul>
+                        </div>
+                        <div class="time" id="box" style="display: none;">
+                            <a class="arrow-left" href="#"><img src="img/Arrow-left.svg" alt=""></a>
+                            <a class="arrow-right" href="#"><img src="img/Arrow-right.svg" alt=""></a>
+                            <p class="date" id="replace-me">1 Сентября 2019</p>
+
+                            <div class="time_box">
+                                    <ul>
+                                            <li><a href="">00:00-00:30</a></li>
+                                            <li><a href="">00:30-01:00</a></li>
+                                            <li><a href="">01:00-01:30</a></li>
+                                            <li><a href="">01:30-02:00</a></li>
+                                            <li><a href="">02:00-02:30</a></li>
+                                            <li><a href="">02:30-03:00</a></li>
+                                            <li><a href="">03:00-03:30</a></li>
+                                            <li><a href="">03:30-04:00</a></li>
+                                            <li><a href="">04:00-04:30</a></li>
+                                            <li><a href="">04:30-05:00</a></li>
+                                            <li><a href="">05:00-05:30</a></li>
+                                            <li><a href="">05:30-06:00</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="">06:00-06:30</a></li>
+                                            <li><a href="">06:30-07:00</a></li>
+                                            <li><a href="">07:00-07:30</a></li>
+                                            <li><a href="">07:30-08:00</a></li>
+                                            <li><a href="">08:00-08:30</a></li>
+                                            <li><a href="">08:30-09:00</a></li>
+                                            <li><a class="-active top" href="">09:00-09:30</a></li>
+                                            <li><a class="-active" href="">09:30-10:00</a></li>
+                                            <li><a class="-active" href="">10:00-10:30</a></li>
+                                            <li><a class="-active" href="">10:30-11:00</a></li>
+                                            <li><a class="-active" href="">11:00-11:30</a></li>
+                                            <li><a class="-active bottom" href="">11:30-12:00</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a class="-active top" href="">12:00-12:30</a></li>
+                                            <li><a class="-active bottom" href="">12:30-13:00</a></li>
+                                            <li><a href="">13:00-13:30</a></li>
+                                            <li><a href="">13:30-14:00</a></li>
+                                            <li><a class="-active top" href="">14:00-14:30</a></li>
+                                            <li><a class="-active" href="">14:30-15:00</a></li>
+                                            <li><a class="-active" href="">15:00-15:30</a></li>
+                                            <li><a class="-active" href="">15:30-16:00</a></li>
+                                            <li><a class="-active no-free" href="">16:00-16:30</a></li>
+                                            <li><a class="-active no-free" href="">16:30-17:00</a></li>
+                                            <li><a class="-active" href="">17:00-17:30</a></li>
+                                            <li><a class="-active bottom" href="">17:30-18:00</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a class="-active top" href="">18:00-18:30</a></li>
+                                            <li><a class="-active" href="">18:30-19:00</a></li>
+                                            <li><a class="-active" href="">19:00-19:30</a></li>
+                                            <li><a class="-active" href="">19:30-20:00</a></li>
+                                            <li><a class="-active" href="">20:00-20:30</a></li>
+                                            <li><a class="-active bottom" href="">20:30-21:00</a></li>
+                                            <li><a href="">21:00-21:30</a></li>
+                                            <li><a href="">21:30-22:00</a></li>
+                                            <li><a href="">22:00-22:30</a></li>
+                                            <li><a href="">22:30-23:00</a></li>
+                                            <li><a href="">23:00-23:30</a></li>
+                                            <li><a href="">23:30-00:00</a></li>
+                                        </ul>
+                            </div>
+
+   
+                        </div>
+            </div>
+
+            <!--------------Mobile SUMBIT------------------>
+            <!--------------Mobile SUMBIT------------------>
+            <!--------------Mobile SUMBIT------------------>
+
+            <input type="submit" class="save schedule" name="savechanges" value="СОХРАНИТЬ">
+
+
+        </div>
+    </div>
+<!-- Начинается футер! -->
+
+<footer class="footer-region">
+    <div class="_container">
+        <div class="layout">
+            <div class="data-region">
+                <div class="footer-column">
+                    <a href="#" class="connect">Подключиться как салон</a>
+                    <a href="#" class="connect">Подключиться как мастер</a>
+                    <a href="#" class="forinvestors">Инвесторам</a>
+                    <a href="#" class="franchising">Франчайзинг</a>
+                    <a href="#" class="presscenter">Пресс-центр</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#" class="allsalons">Все салоны</a>
+                    <a href="#" class="allmasters">Все мастера</a>
+                    <a href="#" class="specialoffers">Специальные предложения</a>
+                    <a href="#" class="giftshop">Магазин подарков</a>
+                    <a href="#" class="agreement">Пользовательское соглашение</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#" class="aboutus">О проекте</a>
+                    <a href="#" class="contactus">Связаться с нами</a>
+                    <a href="#" class="vacancy">Вакансии</a>
+                </div>
+            </div>
+            <div class="social-region">
+                <div class="first-row">
+                    <a href="#" class="link"><i class="icon fab fa-vk"></i></a>
+                    <a href="#" class="link"><i class="icon fab fa-facebook-f"></i></a>
+                    <a href="#" class="link"><i class="icon fab fa-odnoklassniki"></i></a>
+                </div>
+                <div class="second-row">
+                    <a href="#" class="link"><i class="icon fab fa-instagram"></i></a>
+                    <a href="#" class="link"><i class="icon fab fa-youtube"></i></a>
+                    <a href="#" class="link"><i class="icon fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- ЗАКАНЧИВАЕТСЯ ФУТЕР! -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+.auth-region {
+    padding-bottom: 15px;
+}
+
+.auth-header {
+
+    .auth-link {
+        color: black;
+        background: #EBEBEB;
+    }
+
+    .auth-link.-active {
+        color: $color-purple;
+        background: white;
+    }
+}
+
+.reg-form {
+    max-width: 460px;
+
+    .first-row,
+    .second-row {
+        margin-bottom: 10px;
+    }
+
+    .fourth-row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .registration {
+        border: 0;
+        cursor: pointer;
+    }
+
+    .name,
+    .phonenumber,
+    .thispassword {
+        //margin-right: 10px;
+    }
+}
+

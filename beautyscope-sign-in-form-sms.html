@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="smsauth-region">
+        <div class="auth-header">
+            <a href="#" class="auth-link -active"><span class="authtype -active">ВХОД</span></a>
+            <a href="#" class="auth-link"><span class="authtype">РЕГИСТРАЦИЯ</span></a>
+        </div>
+        <div class="auth-content">
+            <div class="number-region">
+                <span class="number">+7 (999) 123-45-67</span>
+            </div>
+            <div class="code-region">
+                <span class="title">Введите код из СМС</span>
+                <form action="" id="code_form" class="code-form">
+                    <input type="text" id="sms" class="code" maxlength="4" placeholder="_ _ _ _" required>
+                    <img class="icon-refresh" src="img/icon-refresh.svg">
+                </form>
+                <div class="auth-buttons">
+                    <input type="submit" form="code_form" class="signin" name="signin" value="ВОЙТИ">
+                    <a href="#" class="goback">ДРУГОЙ НОМЕР</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+    <!-- JQuery masked input -->
+    <script src="libs/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+
+    <!-- OWLCarousel -->
+    <script src="libs/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Скрипты -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>

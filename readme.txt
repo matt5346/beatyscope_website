@@ -1,0 +1,2 @@
+Добавленные новые страницы и окна: beautyscope-pop-up-favorite.html, beautyscope-pop-up-notification.html, beautyscope-shedule.html, beautyscope-online-monitor.html.
+Также добавлены кнопки и маркеры в соответствии с ТЗ.

@@ -1,0 +1,74 @@
+.smsauth-region {
+    padding-bottom: 25px;
+    max-height: 275px;
+}
+
+.auth-content {
+    font-family: $font-general;
+}
+
+.number-region {
+    margin-bottom: 30px;
+
+    .number {
+        font-weight: 300;
+        font-size: 24px;
+        color: #666666;
+    }
+}
+
+.code-region {
+
+    .title {
+        color: black;
+    }
+
+    .code-form {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .code {
+        box-sizing: border-box;
+        width: 220px;
+        border: 1px solid #E0E0E0;
+        border-radius: 5px;
+        padding: 10px;
+        margin-right: 20px;
+    }
+
+    .icon-refresh {
+        cursor: pointer;
+    }
+}
+
+.auth-buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 270px;
+    margin: 0 auto;
+
+    a {
+        text-decoration: none;
+        border-radius: 20px;
+        padding: 10px 15px;
+    }
+
+    .signin {
+        color: white;
+        background-color: $color-purple;
+        margin-right: 15px;
+        border: 0;
+        border-radius: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    .goback {
+        color: $color-purple;
+        background: white;
+        border: 1px solid $color-purple;
+    }
+}

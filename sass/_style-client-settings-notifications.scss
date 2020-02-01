@@ -1,0 +1,56 @@
+.notifications {
+
+    .settings-form {
+        max-width: 1170px;
+    }
+
+    .title {
+        margin-bottom: 15px;
+    }
+
+    .type {
+        border: 1px solid #E0E0E0;
+        border-radius: 3px;
+    }
+
+    .save {
+        margin-top: 15px;
+    }
+}
+
+.settings-form .settings_inner {
+    &:first-child {
+        margin-bottom: 10px;
+    }
+}
+
+.settings-content {
+
+    label {
+        cursor: pointer;
+    }
+
+    .checkbox {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+    .type,
+    .newmessages,
+    .notification,
+    .favorite,
+    .complain,
+    .specialoffers {
+        height: 16px;
+        width: 16px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+    }
+
+    .checkbox {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+}

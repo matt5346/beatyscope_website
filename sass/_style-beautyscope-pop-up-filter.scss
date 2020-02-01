@@ -1,0 +1,205 @@
+.popup-filter {
+    display: flex;
+    font-family: $font-general;
+    width: 1170px;
+    height: 400px;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.popup-categories {
+    width: 280px;
+    overflow: auto;
+    .section {
+        display: flex;
+        align-items: center;
+        //height: 40px;
+        padding: 15px;
+        font-weight: 300;
+        font-size: 14px;
+        //padding-left: 15px;
+        &.-active {
+            background: #FDF1F1;
+        }
+        &:hover {
+            background: #FDF1F1;
+            cursor: pointer;
+            border-radius: 8px 0 0 8px;
+        }
+    }
+
+    .ellipse {
+        margin-right: 5px;
+    }
+}
+
+.popup-separator {
+    height: 398px;
+    border: 0.5px solid #E6E6E6;
+}
+
+.popup-subcategories {
+    font-weight: 300;
+    font-size: 14px;
+    width: 280px;
+    overflow: auto;
+    .subcategory-section {
+        display: flex;
+        //height: 40px;
+        //padding-left: 15px;
+        padding: 15px;
+    }
+
+    .subcategory-section.-active {
+        background: #FDF1F1;
+    }
+
+    .subcategory-section:hover {
+        background: #FDF1F1;
+        cursor: pointer;
+    }
+
+    .subcategory {
+        height: 20px;
+        margin: auto 0;
+    }
+}
+
+.popup-services {
+    font-weight: 300;
+    font-size: 14px;
+    width: 280px;
+    overflow: auto;
+    .service-section {
+        display: flex;
+        //height: 40px;
+        //padding-left: 15px;
+        padding: 15px;
+    }
+
+    .service-section.-active {
+        background: #FDF1F1;
+    }
+
+    .service-section:hover {
+        background: #FDF1F1;
+        cursor: pointer;
+    }
+
+    .service {
+        height: 20px;
+        margin: auto 0;
+    }
+}
+
+.popup-cost {
+    padding: 15px;
+
+    .title {
+        font-weight: bold;
+        font-size: 16px;
+    }
+}
+
+.popup-range {
+    margin-top: 5px;
+    width: 300px;
+    margin-bottom: 15px;
+
+    .irs-line {
+        height: 2px !important;
+    }
+
+    .irs-handle {
+        top: 29px !important;
+        width: 15px !important;
+        height: 15px !important;
+        border: 2px solid $color-purple !important;
+        box-shadow: 0 1px 3px $color-purple !important;
+        cursor: pointer;
+    }
+
+    .irs-line {
+        background-color: $color-purple !important;
+    }
+
+    .irs-from,
+    .irs-to,
+    .irs-single,
+    .irs-bar {
+        font-family: $font-general;
+        font-weight: 600;
+        font-size: 14px;
+        color: $color-purple !important;
+        background: none !important;
+    }
+
+    .irs-from:before,
+    .irs-to:before,
+    .irs-single:before {
+        display: none !important;
+    }
+}
+
+.range-form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .range-fields {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: -20px;
+        margin-top: 20px;
+    }
+
+    .rangefield {
+        font-family: $font-general;
+        font-size: 14px;
+        font-weight: 600;
+        color: #7C107E !important;
+    }
+
+    .checkbox {
+        display: flex;
+        align-items: center;
+        font-weight: 300;
+        font-size: 14px;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+
+    .method,
+    .place {
+        margin-right: 5px;
+    }
+
+    .working-place {
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+    .submit {
+        font-weight: 600;
+        font-size: 14px;
+        color: white;
+        background: $color-purple;
+        border: 0;
+        border-radius: 20px;
+        padding: 12px 35px;
+        cursor: pointer;
+    }
+}
+
+.popup-payment {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.cost-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}

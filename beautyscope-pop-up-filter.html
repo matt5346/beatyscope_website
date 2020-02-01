@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <title>beautyscope - заказ</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="popup-filter">
+        <div class="popup-categories">
+            <div class="haircut-category section"><img class="icon ellipse"
+                    src="img/blue-small-ellipse.svg">Парикмахерские услуги</div>
+            <div class="cosmetology-category section -active"><img class="icon ellipse"
+                    src="img/red-small-ellipse.svg">Косметология</div>
+            <div class="nail-category section"><img class="icon ellipse" src="img/yellow-small-ellipse.svg">Ногтевой
+                сервис</div>
+            <div class="massage-category section"><img class="icon ellipse" src="img/green-small-ellipse.svg">Массаж
+            </div>
+        </div>
+        <div class="popup-separator"></div>
+        <div class="popup-subcategories">
+            <div class="subcategory-section -active"><span class="subcategory">Аппаратная</span></div>
+            <div class="subcategory-section"><span class="subcategory">Инъекционная</span></div>
+            <div class="subcategory-section"><span class="subcategory">Контурная пластика</span></div>
+            <div class="subcategory-section"><span class="subcategory">Уход за кожей лица</span></div>
+            <div class="subcategory-section"><span class="subcategory">Визаж</span></div>
+            <div class="subcategory-section"><span class="subcategory">Татуаж</span></div>
+            <div class="subcategory-section"><span class="subcategory">Ресницы и брови</span></div>
+            <div class="subcategory-section"><span class="subcategory">Эпиляция</span></div>
+            <div class="subcategory-section"><span class="subcategory">Пирсинг</span></div>
+            <div class="subcategory-section"><span class="subcategory">Солярий, хамам</span></div>
+        </div>
+        <div class="popup-separator"></div>
+        <div class="popup-services">
+            <div class="service-section"><span class="service">Миостимуляция</span></div>
+            <div class="service-section"><span class="service">Лимфодренаж</span></div>
+            <div class="service-section"><span class="service">Микротоки</span></div>
+            <div class="service-section"><span class="service">Дарсенвализация</span></div>
+            <div class="service-section"><span class="service">Ультразвуковая</span></div>
+            <div class="service-section -active"><span class="service">Криолиполиз</span></div>
+            <div class="service-section"><span class="service">Эндосфера</span></div>
+            <div class="service-section"><span class="service">Вакуум</span></div>
+            <div class="service-section"><span class="service">Лазерная шлифовка лица</span></div>
+        </div>
+        <div class="popup-separator"></div>
+        <div class="popup-cost">
+            <form action="" class="range-form">
+                <span class="title">Стоимость</span>
+                <div class="range-fields">
+                    <span id="rangefield1" class="rangefield -first"></span>
+                    <span id="rangefield2" class="rangefield -second"></span>
+                </div>
+                <div class="popup-range">
+                    <input type="text" id="price_range" class="js-range-slider" name="range" value="" />
+                </div>
+                <span class="title">Способы оплаты</span>
+                <div class="popup-payment">
+                    <label class="checkbox"><input type="checkbox" class="method" name="method"
+                            value="cash">Наличными</label>
+                    <label class="checkbox"><input type="checkbox" class="method" name="method"
+                            value="bycard">Картой</label>
+                    <label class="checkbox"><input type="checkbox" class="method" name="method" value="fromcardtocard">С
+                        карты на карту</label>
+                </div>
+                <span class="title">Место работы</span>
+                <div class="working-place">
+                    <label class="checkbox"><input type="checkbox" class="place" name="place"
+                            value="salon">Салон</label>
+                    <label class="checkbox"><input type="checkbox" class="place" name="place"
+                            value="visit">Выезд</label>
+                </div>
+                <div class="cost-buttons">
+                    <input type="submit" class="submit" value="СПИСКОМ">
+                    <input type="submit" class="submit" value="НА КАРТЕ">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--Plugin CSS file with desired skin-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" />
+
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--Plugin JavaScript file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>

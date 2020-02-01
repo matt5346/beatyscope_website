@@ -1,0 +1,99 @@
+.promomaster-region {
+
+    &.master_promo {
+
+
+
+        .promo-offer {
+            width: 45%;
+            padding: 15px 10px 10px 15px;
+            max-width: 375px;
+
+            & .price {
+                border: 1px solid rgba(#7C107E, .3);
+                border-radius: 4px;
+                padding: 6px 0;
+                font-family: $font-general;
+                font-size: 14px;
+                padding-left: 10px;
+                width: 50%;
+                margin-top: 35px;
+                margin-bottom: 10px;
+                & span {
+                    &:first-child {
+                        color: rgba(#000000, .4);
+        
+                    }
+        
+                    &:last-child {
+                        color: #7C107E;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        .addpromo-region {
+            .promoname {
+                max-width: 30%;
+            }
+        
+            .price {
+                max-width: 10%;
+            }
+        
+            .duration {
+                max-width: 15%;
+                min-height: 40px;
+            }
+        
+            .description {
+                max-width: 100%;
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+
+        .profile-promooffers {
+            margin-bottom: 30px;
+        }
+    
+        .promooffers-region {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+    
+        .add-promo {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+        .add-promo {
+            margin-bottom: 0;
+        
+            
+        }
+    
+        .promooffers-region {
+    
+            .title {
+                margin-bottom: 15px;
+            }
+        
+            .special-offer {
+                width: 35%;
+            }
+        
+            .offer-content {
+                margin-bottom: 10px;
+            }
+        }
+
+    }
+
+    
+}
+
+
+
+

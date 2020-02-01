@@ -1,0 +1,119 @@
+.personal-data {
+    background: #FCF6FE;
+
+    .profile-settings {
+        margin-bottom: 20px;
+    }
+
+    .masterselector-region {
+        margin: -10px 0 0px auto;
+    }
+
+    .settings-content {
+        display: flex;
+        justify-content: space-between;
+        max-width: 620px;
+        width: 95%;
+    }
+
+    .deleteaccount {
+        text-decoration: underline;
+    }
+
+    input {
+        margin-bottom: 10px;
+    }
+
+    .settings-form {
+
+        .changepass {
+            margin-top: 10px;
+        }
+    }
+}
+
+.switch-region {
+    font-family: $font-general;
+    max-width: 300px;
+
+    .setting-region {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 45px;
+    }
+
+    .switch-button {
+        margin-right: 15px;
+    }
+
+    .ball {
+        width: 20px;
+        height: 20px;
+        left: 0;
+        cursor: pointer;
+    }
+}
+
+.switch-button {
+    input[type="checkbox"] {
+        width: 40px;
+        height: 12px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        outline: none;
+        border-radius: 50px;
+        border: 0;
+        transition: 0.5s;
+        position: relative;
+    }
+
+    input[type="checkbox"]::before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border: 1px solid $color-purple;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+        background: #fff;
+        transform: scale(1.1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+        transition: 0.5s;
+        margin-top: 7px;
+        cursor: pointer;
+    }
+
+    input:checked[type="checkbox"]::before {
+        background-color: $color-purple;
+        left: 22px;
+    }
+}
+
+.switch-header {
+    display: flex;
+
+    .title {
+        font-weight: 300;
+        font-size: 14px;
+    }
+}
+
+.switch-button {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 12px;
+    background-color: #E0E0E0;
+    border-radius: 6px;
+}
+
+.switch-footer {
+    font-weight: 300;
+    font-size: 12px;
+    color: #666666;
+
+    .description {
+        letter-spacing: -0.3px;
+    }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="auth-region">
+        <div class="auth-header">
+            <a href="#" class="auth-link"><span class="authtype">ВХОД</span></a>
+            <a href="#" class="auth-link -active"><span class="authtype -active">РЕГИСТРАЦИЯ</span></a>
+        </div>
+        <div class="auth-content">
+            <div class="title-region">
+                <span class="title wegladtoseeyou">Мы рады Вас видеть!</span>
+                <span class="description">Войдите в личный кабинет чтобы оставлять заявки или стать мастером</span>
+            </div>
+            <div class="auth-password">
+                <span class="title">Введите свои данные</span>
+                <form action="" class="reg-form">
+                    <div class="first-row">
+                        <input type="text" class="name" placeholder="Имя" required>
+                    </div>
+                    <div class="second-row">
+                        <input id="phone" type="tel" class="phonenumber" placeholder="+7(___)___-__-__" required>
+                        <input type="email" class="email" placeholder="E-mail" required>
+                    </div>
+                    <div class="third-row">
+                        <input type="password" class="thispassword" placeholder="Пароль" required>
+                        <input type="password" class="repeatpassword" placeholder="Повторите пароль" required>
+                    </div>
+                    <div class="fourth-row"><label class="specialist"><input type="checkbox" class="checkbox">Я -
+                            специалист</label>
+                        <input type="submit" class="registration" name="registration" value="РЕГИСТРАЦИЯ"></div>
+                </form>
+            </div>
+            <div class="auth-socialnetworks">
+                <span class="title">Или зарегистрируйтесь через соцсети</span>
+                <div class="social-networks">
+                    <a href="#" class="signin"><img class="icon-vk" src="img/icon-signin-vk.svg"></a>
+                    <a href="#" class="signin"><img class="icon-fb" src="img/icon-signin-fb.svg"></a>
+                    <a href="#" class="signin"><img class="icon-ok" src="img/icon-signin-ok.svg"></a>
+                </div>
+            </div>
+        </div>
+        <div class="auth-footer">
+            <span class="agreement">Продолжая регистрацию Вы соглашаетесь с условиями <a href="#" class="privacy">Политики
+                    конфиденциальности</a></span>
+        </div>
+    </div>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+    <!-- OWLCarousel -->
+    <script src="libs/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+
+    <!-- JQuery masked input -->
+    <script src="libs/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+
+    <!-- Скрипты -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>

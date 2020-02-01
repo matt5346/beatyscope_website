@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Профиль клиента</title>
+
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!-- Стили-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- НАЧИНАЕТСЯ HEADER -->
+
+    <header class="header-region">
+        <div class="_container">
+            <div class="layout">
+
+                <button class="nav-toggle" id="nav-toggle" type="button">
+                    <div class="nav-toggle_item"></div>
+                </button>
+
+                <div class="logotype-region">
+                    <img class="logotype" src="img/logo.svg">
+                </div>
+                <div class="location-region">
+                    <span class="location"><i class="icon fas fa-map-marker-alt"></i>Город</span>
+                </div>
+                <div class="circles-region">
+                    <a href="#" class="blue-button section">
+                        <img class="icon" src="img/icon-hair.svg">
+                    </a>
+                    <a href="#" class="red-button section">
+                        <img class="icon" src="img/icon-cosmetics.svg">
+                    </a>
+                    <a href="#" class="yellow-button section">
+                        <img class="icon" src="img/icon-manicure.svg">
+                    </a>
+                    <a href="#" class="green-button section">
+                        <img class="icon" src="img/icon-massage.svg">
+                    </a>
+                </div>
+                <div class="buttons-region">
+                    <a href="#" class="catalog">Каталог мастеров</a>
+                    <a href="#" class="bespecialist">Стать специалистом</a>
+                </div>
+                <div class="personal-region">
+                        <div class="options-region">
+                            <div class="options_box">
+                                <img class="notif" src="img/notif.svg" alt="">
+                                <a href="#" class="heart button"><i class="icon fas fa-heart"></i></a>
+                                
+                            </div>
+
+                            <div class="options_box">
+                                <img class="notif" src="img/notif.svg" alt="">
+                                <a href="#" class="notifications button"><i class="icon fas fa-bell"></i></a>
+                                
+                            </div>
+
+                            <div class="options_box">
+                                <img class="notif" src="img/notif.svg" alt="">
+                                <a href="#" class="message button"><i class="icon fas fa-envelope"></i></a>
+                                
+                            </div>
+                        </div>
+                    <div class="profile-region">
+                        <a href="#" class="account button"><i class="icon fas fa-user-alt"></i></a>
+                        <a href="#" class="signin button">Вход</a>
+                        <a href="#" class="registration button">Регистрация</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ЗАКАНЧИВАЕТСЯ HEADER -->
+
+    <div class="personal-data settingsmaster-region">
+        <div class="_container">
+            <div class="layout">
+                <div class="profile-header">
+                    <div class="sections-region">
+                        <a href="#" class="myprofile section">Мой профиль</a>
+                        <a href="#" class="settings section -active">Настройки</a>
+                        <a href="#" class="offers section">Услуги</a>
+                        <a href="#" class="specialoffers section">Акции</a>
+                        <a href="#" class="onlinemonitor section">Онлайн-монитор</a>
+                        <a href="#" class="howtogetmore section">Как получать больше?</a>
+                    </div>
+                    <div class="masterselector-region">
+                        <a href="#" class="client">Я КЛИЕНТ</a>
+                        <a href="#" class="master">Я МАСТЕР</a>
+                    </div>
+                </div>
+                <div class="profile-settings">
+                    <div class="choice-region">
+                        <a href="#" class="personal-data section -active"><span class="title -active">Персональные
+                                данные</span></a>
+                        <a href="#" class="aboutme section"><span class="title">О себе</span></a>
+                        <a href="#" class="notifications section"><span class="title">Уведомления</span></a>
+                    </div>
+                    <div class="settings-content">
+                        <form action="" class="settings-form" method="POST">
+                            <span class="title">Данные для входа</span>
+                            <input type="email" class="mail" placeholder="E-mail" required>
+                            <input type="tel" id="phone" class="phonenumber" placeholder="+7(___)___-__-__" required>
+                            <span class="title changepass">Сменить пароль</span>
+                            <input type="password" class="thispassword" placeholder="Текущий пароль">
+                            <input type="password" class="newpassword" placeholder="Новый пароль">
+                            <input type="password" class="repeatnewpassword" placeholder="Повторите пароль">
+                            <input type="submit" class="save" name="savechanges" value="СОХРАНИТЬ">
+                            <a href="#" class="deleteaccount">удалить аккаунт</a>
+                        </form>
+                        <div class="switch-region">
+                            <div class="setting-region">
+                                <div class="switch-header">
+                                    <div class="switch-button">
+                                        <input type="checkbox" class="freeze">
+                                    </div>
+                                    <span class="title">Режим заморозки</span>
+                                </div>
+                                <div class="switch-footer">
+                                    <span class="description">Включите этот режим, если планируете длительное время не
+                                        пользоваться порталом</span>
+                                </div>
+                            </div>
+                            <div class="setting-region">
+                                <div class="switch-header">
+                                    <div class="switch-button">
+                                        <input type="checkbox" class="online">
+                                    </div>
+                                    <span class="title">Всегда online</span>
+                                </div>
+                                <div class="switch-footer">
+                                    <span class="description">Пользователи будут видеть Вас online даже когда Вы не на
+                                        сайте</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Начинается футер! -->
+
+    <footer class="footer-region">
+        <div class="_container">
+            <div class="layout">
+                <div class="data-region">
+                    <div class="footer-column">
+                        <a href="#" class="connect">Подключиться как салон</a>
+                        <a href="#" class="connect">Подключиться как мастер</a>
+                        <a href="#" class="forinvestors">Инвесторам</a>
+                        <a href="#" class="franchising">Франчайзинг</a>
+                        <a href="#" class="presscenter">Пресс-центр</a>
+                    </div>
+                    <div class="footer-column">
+                        <a href="#" class="allsalons">Все салоны</a>
+                        <a href="#" class="allmasters">Все мастера</a>
+                        <a href="#" class="specialoffers">Специальные предложения</a>
+                        <a href="#" class="giftshop">Магазин подарков</a>
+                        <a href="#" class="agreement">Пользовательское соглашение</a>
+                    </div>
+                    <div class="footer-column">
+                        <a href="#" class="aboutus">О проекте</a>
+                        <a href="#" class="contactus">Связаться с нами</a>
+                        <a href="#" class="vacancy">Вакансии</a>
+                    </div>
+                </div>
+                <div class="social-region">
+                    <div class="first-row">
+                        <a href="#" class="link"><i class="icon fab fa-vk"></i></a>
+                        <a href="#" class="link"><i class="icon fab fa-facebook-f"></i></a>
+                        <a href="#" class="link"><i class="icon fab fa-odnoklassniki"></i></a>
+                    </div>
+                    <div class="second-row">
+                        <a href="#" class="link"><i class="icon fab fa-instagram"></i></a>
+                        <a href="#" class="link"><i class="icon fab fa-youtube"></i></a>
+                        <a href="#" class="link"><i class="icon fab fa-telegram-plane"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ЗАКАНЧИВАЕТСЯ ФУТЕР! -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+    <script src="./libs/avatar-generator/katweKibsletterAvatarjs.js"></script>
+
+    <!-- OWLCarousel -->
+    <script src="./libs/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+
+    <script src="./libs/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+
+    <!-- Скрипты -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>

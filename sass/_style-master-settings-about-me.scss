@@ -1,0 +1,277 @@
+.settingsmaster-region,
+.servicesmaster-region,
+.promomaster-region {
+    background: #FCF6FE;
+    margin-bottom: 50px;
+
+    .sections-region {
+        display: flex;
+        justify-content: space-between;
+        width: 810px;
+
+        .section {
+            text-decoration: none;
+            font-family: $font-general;
+            font-weight: 700;
+            font-size: 16px;
+            color: $color-purple;
+        }
+
+        .underline {
+            width: 100%;
+            height: 0;
+            border: 1px solid $color-purple;
+            margin-top: 4px;
+        }
+    }
+
+    .masterselector-region {
+        margin: -10px 0 0px auto;
+    }
+
+    .checkbox {
+        font-size: 14px;
+    }
+
+    .radio {
+        width: 16px;
+        height: 16px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.upload-avatar {
+    margin-top: 10px;
+    background-image: url('../img/add_image.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    background-size: 100% !important;
+    input[type=file] {
+        outline: 0;
+        opacity: 0;
+        pointer-events: none;
+        user-select: none
+    }
+}
+
+.add-button {
+    width: 80px;
+    height: 80px;
+    background: url(../img/add-photo.svg) no-repeat;
+
+    input[type=file] {
+        outline: 0;
+        opacity: 0;
+        pointer-events: none;
+        user-select: none
+    }
+}
+
+.settings-content {
+    overflow: hidden;
+}
+
+.settings-form {
+
+    .settings_inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input_box {
+        font-family: $font-general;
+        width: 100%;
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+        font-size: 15px;
+        margin-bottom: 12px;
+
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        label {
+            position: relative;
+            top: 0;
+            height: 14px;
+            width: 14px;
+            background-color: transparent;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            border-radius: 3px; 
+            margin-right: 8px;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"]:checked + label {
+            background-image: url('../img/checked.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .select-area {
+        font-family: $font-general;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: center;
+        max-width: 220px;
+        color: white;
+        background: $color-purple;
+        border-radius: 20px;
+        padding: 12px 0;
+        margin-bottom: 20px;
+    }
+
+    .place,
+    .pay {
+        margin-bottom: 10px;
+    }
+}
+
+.settings-form.master {
+    .checkboxes-field {
+        width: 50%;
+        justify-content: space-between;
+        .input_box {
+            font-family: $font-general;
+            width: auto;
+            display: flex;
+            justify-content: baseline;
+            align-items: center;
+            font-size: 15px;
+            margin-bottom: 12px;
+            
+    
+    
+            input[type="radio"] {
+                display: none;
+            }
+    
+            label {
+                position: relative;
+                top: 0;
+                height: 14px;
+                width: 14px;
+                background-color: transparent;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                display: inline-block;
+                border-radius: 3px; 
+                margin-right: 8px;
+                cursor: pointer;
+            }
+    
+            input[type="radio"]:checked + label {
+                background-image: url('../img/checked.png');
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+    }
+}
+
+.checkboxes-field {
+    display: flex;
+
+    .checkbox {
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+    }
+
+    .radio {
+        margin-right: 10px;
+        margin-bottom: 0px;
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.address-field {
+    position: relative;
+    display: flex;
+    max-width: 100%;
+    margin-top: -20px;
+    margin-bottom: 10px;
+
+    .address {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .icon {
+        position: absolute;
+        right: 0;
+        margin-top: 12px;
+        margin-right: 10px;
+    }
+}
+
+.working-place {
+    display: flex;
+    flex-direction: row;
+
+    .checkbox {
+        display: flex;
+        align-items: center;
+        margin-right: 35px;
+    }
+
+    .cabinet,
+    .visit {
+        width: 14px;
+        height: 14px;
+        margin-right: 10px;
+        margin-bottom: 0px !important;
+    }
+}
+
+.payment-method {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+
+    .checkbox {
+        display: flex;
+        align-items: center;
+        margin-right: 12px;
+    }
+
+    .cash,
+    .bycard,
+    .fromcardtocard {
+        width: 14px;
+        height: 14px;
+        margin-right: 10px;
+        margin-bottom: 0px !important;
+    }
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+
+    .photo-section {
+        height: 80px;
+    }
+
+    .photo {
+        width: 142px;
+        height: 80px;
+        margin-right: 10px;
+    }
+
+    .add-button {
+        cursor: pointer;
+    }
+}

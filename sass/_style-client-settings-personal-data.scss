@@ -1,0 +1,130 @@
+.settingsclient-region,
+.settingsmaster-region,
+.servicesmaster-region,
+.promomaster-region {
+
+    .layout {
+        padding: 41px 0 0 135px;
+    }
+
+    .sections-region {
+        width: 545px;
+    }
+
+    .clientselector-region {
+        margin: -10px 0 0px auto;
+    }
+
+    .profile-header {
+        margin-bottom: 20px;
+    }
+
+    .underline {
+        width: 90px;
+    }
+
+    .settings-form {
+        display: flex;
+        flex-direction: column;
+        max-width: 220px;
+    }
+
+    .deleteaccount {
+        text-decoration: underline;
+    }
+}
+
+.profile-settings {
+    max-width: 1170px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.choice-region {
+    display: flex;
+    //justify-content: space-between;
+    background-color: #F5F5F5 !important;
+
+    a {
+        text-decoration: none;
+    }
+
+    .personal-data {
+        background: #F5F5F5;
+    }
+
+    .section {
+        //flex: auto;
+        font-family: $font-general;
+        font-weight: bold;
+        font-size: 14px;
+        color: #7B7B7B;
+        padding: 15px 20px;
+        padding-bottom: 1px;
+        cursor: pointer;
+    }
+
+    .section.-active {
+        background-color: white;
+        border-radius: 8px 8px 0px 0px;
+    }
+}
+
+
+
+.settings-content {
+    // font-family: $font-general;
+    // font-weight: bold;
+    // font-size: 16px;
+    padding: 35px 0 0 20px;
+
+    .title {
+        font-family: $font-general;
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .title.-pass {
+        margin-top: 10px;
+    }
+
+    input,
+    textarea {
+        font-family: $font-general;
+        font-weight: 300;
+        font-size: 16px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+        border-radius: 5px;
+        padding: 10px 15px;
+        margin-bottom: 15px;
+    }
+
+    .save {
+        font-family: $font-general;
+        font-weight: 600;
+        font-size: 14px;
+        color: white;
+        max-width: 140px;
+        background-color: $color-purple;
+        border: 0;
+        border-radius: 20px;
+        padding: 12px 25px;
+        margin: 0 auto 30px auto;
+        cursor: pointer;
+    }
+
+    .deleteaccount {
+        display: block;
+        font-family: $font-general;
+        font-weight: 300;
+        font-size: 14px;
+        color: $color-purple;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+}
+
+

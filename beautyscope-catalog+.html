@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang=ru>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Каталог мастеров</title>
+
+    <!-- Шрифты -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!-- Стили-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- НАЧИНАЕТСЯ HEADER -->
+
+    <header class="header-region">
+        <div class="_container">
+            <div class="layout">
+
+                <button class="nav-toggle" id="nav-toggle" type="button">
+                    <div class="nav-toggle_item"></div>
+                </button>
+                <div class="logotype-region">
+                    <img class="logotype" src="img/logo.svg">
+                </div>
+                <div class="location-region">
+                    <span class="location"><i class="icon fas fa-map-marker-alt"></i>Город</span>
+                </div>
+                <div class="circles-region">
+                    <a href="#" class="blue-button section">
+                        <img class="icon" src="img/icon-hair.svg">
+                    </a>
+                    <a href="#" class="red-button section">
+                        <img class="icon" src="img/icon-cosmetics.svg">
+                    </a>
+                    <a href="#" class="yellow-button section">
+                        <img class="icon" src="img/icon-manicure.svg">
+                    </a>
+                    <a href="#" class="green-button section">
+                        <img class="icon" src="img/icon-massage.svg">
+                    </a>
+                </div>
+                <div class="buttons-region">
+                    <a href="#" class="catalog">Каталог мастеров</a>
+                    <a href="#" class="bespecialist">Стать специалистом</a>
+                </div>
+                <div class="personal-region">
+                        <div class="options-region">
+                            <div class="options_box">
+                                <img class="notif" src="img/notif.svg" alt="">
+                                <a href="#" class="heart button"><i class="icon fas fa-heart"></i></a>
+                                
+                            </div>
+
+                            <div class="options_box">
+                                <img class="notif" src="img/notif.svg" alt="">
+                                <a href="#" class="notifications button"><i class="icon fas fa-bell"></i></a>
+                                
+                            </div>
+
+                            <div class="options_box">
+                                <img class="notif" src="img/notif.svg" alt="">
+                                <a href="#" class="message button"><i class="icon fas fa-envelope"></i></a>
+                                
+                            </div>
+                    </div>
+                    <div class="profile-region">
+                        <a href="#" class="account button"><i class="icon fas fa-user-alt"></i></a>
+                        <a href="#" class="signin button">Вход</a>
+                        <a href="#" class="registration button">Регистрация</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ЗАКАНЧИВАЕТСЯ HEADER -->
+
+    <div class="main-region">
+        <div class="_container">
+            <div class="layout">
+                <div class="main-options">
+                    <div class="search-options catalog">
+                        <div class="title">
+                            <img class="iconellipse" src="img/red-ellipse.svg">
+                            <p>
+                                КриолиполизКриолиполиз
+                            </p>
+                            <a href="#" class="deletelink">
+                                <img class="iconcross" src="img/icon-cross.svg">
+                            </a>
+                        </div>
+                        <a href="#" class="plusbutton"><img class="iconplus" src="img/icon-plus.svg"></a>
+                    </div>
+                    <div class="parametres-region catalog">
+                        <button class="mobile_filter" id="filter">Фильтры</button>
+
+                        <div class="filters_box">
+                            <select id="sort_select" class="select -sort" name="sort">
+                                    <option value="0" data-imagesrc="img/arrow-up-sort.svg">По цене (возр.)</option>
+                                    <option value="1" data-imagesrc="img/arrow-down-sort.svg">По цене (уб.)</option>
+                                    <option value="2" data-imagesrc="img/arrow-up-sort.svg">По рейтингу (возр.)</option>
+                                    <option value="3" data-imagesrc="img/arrow-down-sort.svg">По рейтингу (уб.)</option>
+                                    <option value="4" data-imagesrc="img/arrow-up-sort.svg">По категории (возр.)</option>
+                                    <option value="5" data-imagesrc="img/arrow-down-sort.svg">По категории (уб.)</option>
+                                </select>
+                                <select id="amount_select" class="select -amount" name="amount">
+                                    <option value="5">Показывать по: <span class="number">5</span></option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="25">25</option>
+                                </select>
+
+                                <div class="amount_select_box">
+                                    <span>Показывать по:</span>
+                                        <select id="amount_select_mob" class="select -amount" name="amount">
+                                            <option value="5"><span class="number">5</span></option>
+                                            <option value="10">10</option>
+                                            <option value="15">15</option>
+                                            <option value="25">25</option>
+                                        </select>
+                                </div>
+                        
+                                <div class="isonline">
+                                    <input type="checkbox" name="" id="post">
+                                    <label for="post" id="check_label"></label>
+                                    Только онлайн
+                                </div>
+
+                        </div>
+                        <a href="#" class="map"><span>СМОТРЕТЬ НА КАРТЕ</span><img src="./img/map_catalog.svg" alt=""></a>
+
+                    </div>
+                </div>
+                <div class="masters-region">
+                    <div class="master-section">
+                        <div class="master-preview">
+                            <div class="master-header">
+                                <div class="avatar">
+                                    <canvas class="user-icon" data-name="Бегемот"></canvas>
+                                </div>
+                                <div class="name">
+                                    <span class="title">Бегемот, <span class="type">салон</span></span>
+                                    <span class="status"><img class="online" src="img/icon-online.svg">online</span>
+                                </div>
+                                <div class="rating">
+                                    <img class="icon" src="img/icon-star.svg">
+                                    <span class="score">4.2</span>
+                                </div>
+                            </div>
+                            <div class="master-location">
+                                <img class="icon" src="img/icon-location.svg">
+                                <span class="description">ул. Тверская-Ямская,ул. Тверская-Ямская,ул. Тверская-Ямская,ул. Тверская-Ямская, 14к3</span>
+                                <a href="#" class="onmap">на карте</a>
+                            </div>
+                        </div>
+                        <div class="underline"></div>
+                        <div class="master-skills">
+                            <div class="skill-section">
+                                <img class="icon" src="img/blue-small-ellipse.svg">
+                                <span class="skill">Окрашивание</span>
+                                <span class="price">1200 руб</span>
+                            </div>
+                            <div class="skill-section">
+                                <img class="icon" src="img/red-small-ellipse.svg">
+                                <span class="skill">Шеллак</span>
+                                <span class="price">500 руб</span>
+                            </div>
+                            <div class="skill-section">
+                                <img class="icon" src="img/yellow-small-ellipse.svg">
+                                <span class="skill">Миостимуляция</span>
+                                <span class="price">800 руб</span>
+                            </div>
+                        </div>
+                        <div class="master-buttons">
+                            <a href="#" class="sendmessage"><img class="icon" src="img/icon-message.svg"></a>
+                            <a href="#" class="subscribe">ЗАПИСАТЬСЯ <div class="question-icon"><img class="question"
+                                        src="img/icon-question.svg"><span class="description">Мастер свяжется с вами,
+                                        согласует<br>условия и подтвердит запись</span></div></a>
+                        </div>
+                    </div>
+                    <div class="master-section">
+                        <div class="master-preview">
+                            <div class="master-header">
+                                <div class="avatar">
+                                    <canvas class="user-icon" data-name="Аннэт"></canvas>
+                                </div>
+                                <div class="name">
+                                    <span class="title">Аннэт, <span class="type">мастер</span></span>
+                                    <span class="status"><img class="online" src="img/icon-online.svg">online</span>
+                                </div>
+                                <div class="rating">
+                                    <img class="icon" src="img/icon-star.svg">
+                                    <span class="score">4.6</span>
+                                </div>
+                            </div>
+                            <div class="master-location">
+                                <img class="icon" src="img/icon-location.svg">
+                                <span class="description">Мичуринский пр-т, 112</span>
+                                <a href="#" class="onmap">на карте</a>
+                            </div>
+                        </div>
+                        <div class="underline"></div>
+                        <div class="master-skills">
+                            <div class="skill-section">
+                                <img class="icon" src="img/blue-small-ellipse.svg">
+                                <span class="skill">Окрашивание</span>
+                                <span class="price">1000 руб</span>
+                            </div>
+                            <div class="skill-section">
+                                <img class="icon" src="img/red-small-ellipse.svg">
+                                <span class="skill">Шеллак</span>
+                                <span class="price">450 руб</span>
+                            </div>
+                            <div class="skill-section">
+                                <img class="icon" src="img/yellow-small-ellipse.svg">
+                                <span class="skill">Миостимуляция</span>
+                                <span class="price">900 руб</span>
+                            </div>
+                        </div>
+                        <div class="master-buttons">
+                            <a href="#" class="sendmessage"><img class="icon" src="img/icon-message.svg"></a>
+                            <a href="#" class="subscribe">ЗАПИСАТЬСЯ <div class="question-icon"><img class="question"
+                                        src="img/icon-question.svg"><span class="description">Мастер свяжется с вами,
+                                        согласует<br>условия и подтвердит запись</span></div></a>
+                        </div>
+                    </div>
+                    <div class="master-section">
+                        <div class="master-preview">
+                            <div class="master-header">
+                                <div class="avatar">
+                                    <canvas class="user-icon" data-name="В"></canvas>
+                                </div>
+                                <div class="name">
+                                    <span class="title">Центавра, <span class="type">салон</span></span>
+                                    <span class="status"><img class="online" src="img/icon-online.svg">online</span>
+                                </div>
+                                <div class="rating">
+                                    <img class="icon" src="img/icon-star.svg">
+                                    <span class="score">4.4</span>
+                                </div>
+                            </div>
+                            <div class="master-location">
+                                <img class="icon" src="img/icon-location.svg">
+                                <span class="description">ул. Петровка, 38</span>
+                                <a href="#" class="onmap">на карте</a>
+                            </div>
+                        </div>
+                        <div class="underline"></div>
+                        <div class="master-skills">
+                            <div class="skill-section">
+                                <img class="icon" src="img/blue-small-ellipse.svg">
+                                <span class="skill">Окрашивание</span>
+                                <span class="price">1300 руб</span>
+                            </div>
+                            <div class="skill-section">
+                                <img class="icon" src="img/red-small-ellipse.svg">
+                                <span class="skill">Шеллак</span>
+                                <span class="price">550 руб</span>
+                            </div>
+                            <div class="skill-section">
+                                <img class="icon" src="img/yellow-small-ellipse.svg">
+                                <span class="skill">Миостимуляция</span>
+                                <span class="price">900 руб</span>
+                            </div>
+                        </div>
+                        <div class="master-buttons">
+                            <a href="#" class="sendmessage"><img class="icon" src="img/icon-message.svg"></a>
+                            <a href="#" class="subscribe">ЗАПИСАТЬСЯ <div class="question-icon"><img class="question"
+                                        src="img/icon-question.svg"><span class="description">Мастер свяжется с вами,
+                                        согласует<br>условия и подтвердит запись</span></div></a>
+                        </div>
+                    </div>
+                    <div class="master-section">
+                        <div class="master-preview">
+                            <div class="master-header">
+                                <div class="avatar">
+                                    <canvas class="user-icon" data-name="Бегемот"></canvas>
+                                </div>
+                                <div class="name">
+                                    <span class="title">Бегемот, <span class="type">салон</span></span>
+                                    <span class="status"><img class="online" src="img/icon-online.svg">online</span>
+                                </div>
+                                <div class="rating">
+                                    <img class="icon" src="img/icon-star.svg">
+                                    <span class="score">4.2</span>
+                                </div>
+                            </div>
+                            <div class="master-location">
+                                <img class="icon" src="img/icon-location.svg">
+                                <span class="description">ул. Тверская-Ямская, 14к3</span>
+                                <a href="#" class="onmap">на карте</a>
+                            </div>
+                        </div>
+                        <div class="underline"></div>
+                        <div class="master-skills">
+                            <div class="skill-section">
+                                <img class="icon" src="img/blue-small-ellipse.svg">
+                                <span class="skill">Окрашивание</span>
+                                <span class="price">1200 руб</span>
+                            </div>
+                            <div class="skill-section">
+                                <img class="icon" src="img/red-small-ellipse.svg">
+                                <span class="skill">Шеллак</span>
+                                <span class="price">500 руб</span>
+                            </div>
+                            <div class="skill-section">
+                                <img class="icon" src="img/yellow-small-ellipse.svg">
+                                <span class="skill">Миостимуляция</span>
+                                <span class="price">800 руб</span>
+                            </div>
+                        </div>
+                        <div class="master-buttons">
+                            <a href="#" class="sendmessage"><img class="icon" src="img/icon-message.svg"></a>
+                            <a href="#" class="subscribe">ЗАПИСАТЬСЯ <div class="question-icon"><img class="question"
+                                        src="img/icon-question.svg"><span class="description">Мастер свяжется с вами,
+                                        согласует<br>условия и подтвердит запись</span></div></a>
+                        </div>
+                    </div>
+                    <div class="master-section">
+                        <div class="master-preview">
+                            <div class="master-header">
+                                <div class="avatar">
+                                    <canvas class="user-icon" data-name="Аннэт"></canvas>
+                                </div>
+                                <div class="name">
+                                    <span class="title">Аннэт, <span class="type">мастер</span></span>
+                                    <span class="status"><img class="online" src="img/icon-online.svg">online</span>
+                                </div>
+                                <div class="rating">
+                                    <img class="icon" src="img/icon-star.svg">
+                                    <span class="score">4.6</span>
+                                </div>
+                            </div>
+                            <div class="master-location">
+                                <img class="icon" src="img/icon-location.svg">
+                                <span class="description">Мичуринский пр-т, 112</span>
+                                <a href="#" class="onmap">на карте</a>
+                            </div>
+                        </div>
+                        <div class="underline"></div>
+                        <div class="master-skills">
+                            <div class="skill-section">
+                                <img class="icon" src="img/blue-small-ellipse.svg">
+                                <span class="skill">Окрашивание</span>
+                                <span class="price">1000 руб</span>
+                            </div>
+                            <div class="skill-section">
+                                <img class="icon" src="img/red-small-ellipse.svg">
+                                <span class="skill">Шеллак</span>
+                                <span class="price">450 руб</span>
+                            </div>
+                            <div class="skill-section">
+                                <img class="icon" src="img/yellow-small-ellipse.svg">
+                                <span class="skill">Миостимуляция</span>
+                                <span class="price">900 руб</span>
+                            </div>
+                        </div>
+                        <div class="master-buttons">
+                            <a href="#" class="sendmessage"><img class="icon" src="img/icon-message.svg"></a>
+                            <a href="#" class="subscribe">ЗАПИСАТЬСЯ <div class="question-icon"><img class="question"
+                                        src="img/icon-question.svg"><span class="description">Мастер свяжется с вами,
+                                        согласует<br>условия и подтвердит запись</span></div></a>
+                        </div>
+                    </div>
+                    <div class="master-section">
+                        <div class="master-preview">
+                            <div class="master-header">
+                                <div class="avatar">
+                                    <canvas class="user-icon" data-name="В"></canvas>
+                                </div>
+                                <div class="name">
+                                    <span class="title">Центавра, <span class="type">салон</span></span>
+                                    <span class="status"><img class="online" src="img/icon-online.svg">online</span>
+                                </div>
+                                <div class="rating">
+                                    <img class="icon" src="img/icon-star.svg">
+                                    <span class="score">4.4</span>
+                                </div>
+                            </div>
+                            <div class="master-location">
+                                <img class="icon" src="img/icon-location.svg">
+                                <span class="description">ул. Петровка, 38</span>
+                                <a href="#" class="onmap">на карте</a>
+                            </div>
+                        </div>
+                        <div class="underline"></div>
+                        <div class="master-skills">
+                            <div class="skill-section">
+                                <img class="icon" src="img/blue-small-ellipse.svg">
+                                <span class="skill">Окрашивание</span>
+                                <span class="price">1300 руб</span>
+                            </div>
+                            <div class="skill-section">
+                                <img class="icon" src="img/red-small-ellipse.svg">
+                                <span class="skill">Шеллак</span>
+                                <span class="price">550 руб</span>
+                            </div>
+                            <div class="skill-section">
+                                <img class="icon" src="img/yellow-small-ellipse.svg">
+                                <span class="skill">Миостимуляция</span>
+                                <span class="price">900 руб</span>
+                            </div>
+                        </div>
+                        <div class="master-buttons">
+                            <a href="#" class="sendmessage"><img class="icon" src="img/icon-message.svg"></a>
+                            <a href="#" class="subscribe">ЗАПИСАТЬСЯ <div class="question-icon"><img class="question"
+                                        src="img/icon-question.svg"><span class="description">Мастер свяжется с вами,
+                                        согласует<br>условия и подтвердит запись</span></div></a>
+                        </div>
+                    </div>
+                    <div class="master-section">
+                        <div class="master-preview">
+                            <div class="master-header">
+                                <div class="avatar">
+                                    <canvas class="user-icon" data-name="Бегемот"></canvas>
+                                </div>
+                                <div class="name">
+                                    <span class="title">Бегемот, <span class="type">салон</span></span>
+                                    <span class="status"><img class="online" src="img/icon-online.svg">online</span>
+                                </div>
+                                <div class="rating">
+                                    <img class="icon" src="img/icon-star.svg">
+                                    <span class="score">4.2</span>
+                                </div>
+                            </div>
+                            <div class="master-location">
+                                <img class="icon" src="img/icon-location.svg">
+                                <span class="description">ул. Тверская-Ямская, 14к3</span>
+                                <a href="#" class="onmap">на карте</a>
+                            </div>
+                        </div>
+                        <div class="underline"></div>
+                        <div class="master-skills">
+                            <div class="skill-section">
+                                <img class="icon" src="img/blue-small-ellipse.svg">
+                                <span class="skill">Окрашивание</span>
+                                <span class="price">1200 руб</span>
+                            </div>
+                            <div class="skill-section">
+                                <img class="icon" src="img/red-small-ellipse.svg">
+                                <span class="skill">Шеллак</span>
+                                <span class="price">500 руб</span>
+                            </div>
+                            <div class="skill-section">
+                                <img class="icon" src="img/yellow-small-ellipse.svg">
+                                <span class="skill">Миостимуляция</span>
+                                <span class="price">800 руб</span>
+                            </div>
+                        </div>
+                        <div class="master-buttons">
+                            <a href="#" class="sendmessage"><img class="icon" src="img/icon-message.svg"></a>
+                            <a href="#" class="subscribe">ЗАПИСАТЬСЯ <div class="question-icon"><img class="question"
+                                        src="img/icon-question.svg"><span class="description">Мастер свяжется с вами,
+                                        согласует<br>условия и подтвердит запись</span></div></a>
+                        </div>
+                    </div>
+                    <div class="master-section">
+                        <div class="master-preview">
+                            <div class="master-header">
+                                <div class="avatar">
+                                    <canvas class="user-icon" data-name="Аннэт"></canvas>
+                                </div>
+                                <div class="name">
+                                    <span class="title">Аннэт, <span class="type">мастер</span></span>
+                                    <span class="status"><img class="online" src="img/icon-online.svg">online</span>
+                                </div>
+                                <div class="rating">
+                                    <img class="icon" src="img/icon-star.svg">
+                                    <span class="score">4.6</span>
+                                </div>
+                            </div>
+                            <div class="master-location">
+                                <img class="icon" src="img/icon-location.svg">
+                                <span class="description">Мичуринский пр-т, 112</span>
+                                <a href="#" class="onmap">на карте</a>
+                            </div>
+                        </div>
+                        <div class="underline"></div>
+                        <div class="master-skills">
+                            <div class="skill-section">
+                                <img class="icon" src="img/blue-small-ellipse.svg">
+                                <span class="skill">Окрашивание</span>
+                                <span class="price">1000 руб</span>
+                            </div>
+                            <div class="skill-section">
+                                <img class="icon" src="img/red-small-ellipse.svg">
+                                <span class="skill">Шеллак</span>
+                                <span class="price">450 руб</span>
+                            </div>
+                            <div class="skill-section">
+                                <img class="icon" src="img/yellow-small-ellipse.svg">
+                                <span class="skill">Миостимуляция</span>
+                                <span class="price">900 руб</span>
+                            </div>
+                        </div>
+                        <div class="master-buttons">
+                            <a href="#" class="sendmessage"><img class="icon" src="img/icon-message.svg"></a>
+                            <a href="#" class="subscribe">ЗАПИСАТЬСЯ <div class="question-icon"><img class="question"
+                                        src="img/icon-question.svg"><span class="description">Мастер свяжется с вами,
+                                        согласует<br>условия и подтвердит запись</span></div></a>
+                        </div>
+                    </div>
+                    <div class="master-section">
+                            <div class="master-preview">
+                                <div class="master-header">
+                                    <div class="avatar">
+                                        <canvas class="user-icon" data-name="Аннэт"></canvas>
+                                    </div>
+                                    <div class="name">
+                                        <span class="title">Аннэт, <span class="type">мастер</span></span>
+                                        <span class="status"><img class="online" src="img/icon-online.svg">online</span>
+                                    </div>
+                                    <div class="rating">
+                                        <img class="icon" src="img/icon-star.svg">
+                                        <span class="score">4.6</span>
+                                    </div>
+                                </div>
+                                <div class="master-location">
+                                    <img class="icon" src="img/icon-location.svg">
+                                    <span class="description">Мичуринский пр-т, 112</span>
+                                    <a href="#" class="onmap">на карте</a>
+                                </div>
+                            </div>
+                            <div class="underline"></div>
+                            <div class="master-skills">
+                                <div class="skill-section">
+                                    <img class="icon" src="img/blue-small-ellipse.svg">
+                                    <span class="skill">Окрашивание</span>
+                                    <span class="price">1000 руб</span>
+                                </div>
+                                <div class="skill-section">
+                                    <img class="icon" src="img/red-small-ellipse.svg">
+                                    <span class="skill">Шеллак</span>
+                                    <span class="price">450 руб</span>
+                                </div>
+                                <div class="skill-section">
+                                    <img class="icon" src="img/yellow-small-ellipse.svg">
+                                    <span class="skill">Миостимуляция</span>
+                                    <span class="price">900 руб</span>
+                                </div>
+                            </div>
+                            <div class="master-buttons">
+                                <a href="#" class="sendmessage"><img class="icon" src="img/icon-message.svg"></a>
+                                <a href="#" class="subscribe">ЗАПИСАТЬСЯ <div class="question-icon"><img class="question"
+                                            src="img/icon-question.svg"><span class="description">Мастер свяжется с вами,
+                                            согласует<br>условия и подтвердит запись</span></div></a>
+                            </div>
+                    </div>
+
+
+                    <!--
+                    <div class="master-section">
+                        <div class="master-preview">
+                            <div class="master-header">
+                                <div class="avatar">
+                                    <canvas class="user-icon" data-name="В"></canvas>
+                                </div>
+                                <div class="name">
+                                    <span class="title">Центавра, <span class="type">салон</span></span>
+                                    <span class="status"><img class="online" src="img/icon-online.svg">online</span>
+                                </div>
+                                <div class="rating">
+                                    <img class="icon" src="img/icon-star.svg">
+                                    <span class="score">4.4</span>
+                                </div>
+                            </div>
+                            <div class="master-location">
+                                <img class="icon" src="img/icon-location.svg">
+                                <span class="description">ул. Петровка, 38</span>
+                                <a href="#" class="onmap">на карте</a>
+                            </div>
+                        </div>
+                        <div class="underline"></div>
+                        <div class="master-skills">
+                            <div class="skill-section">
+                                <img class="icon" src="img/blue-small-ellipse.svg">
+                                <span class="skill">Окрашивание</span>
+                                <span class="price">1300 руб</span>
+                            </div>
+                            <div class="skill-section">
+                                <img class="icon" src="img/red-small-ellipse.svg">
+                                <span class="skill">Шеллак</span>
+                                <span class="price">550 руб</span>
+                            </div>
+                            <div class="skill-section">
+                                <img class="icon" src="img/yellow-small-ellipse.svg">
+                                <span class="skill">Миостимуляция</span>
+                                <span class="price">900 руб</span>
+                            </div>
+                        </div>
+                        <div class="master-buttons">
+                            <a href="#" class="sendmessage"><img class="icon" src="img/icon-message.svg"></a>
+                            <a href="#" class="subscribe">ЗАПИСАТЬСЯ <div class="question-icon"><img class="question"
+                                        src="img/icon-question.svg"><span class="description">Мастер свяжется с вами,
+                                        согласует<br>условия и подтвердит запись</span></div></a>
+                        </div>
+                    </div>
+
+
+                    <div class="master-section">
+                        <div class="master-preview">
+                            <div class="master-header">
+                                <div class="avatar">
+                                    <canvas class="user-icon" data-name="Бегемот"></canvas>
+                                </div>
+                                <div class="name">
+                                    <span class="title">Бегемот, <span class="type">салон</span></span>
+                                    <span class="status"><img class="online" src="img/icon-online.svg">online</span>
+                                </div>
+                                <div class="rating">
+                                    <img class="icon" src="img/icon-star.svg">
+                                    <span class="score">4.2</span>
+                                </div>
+                            </div>
+                            <div class="master-location">
+                                <img class="icon" src="img/icon-location.svg">
+                                <span class="description">ул. Тверская-Ямская, 14к3</span>
+                                <a href="#" class="onmap">на карте</a>
+                            </div>
+                        </div>
+                        <div class="underline"></div>
+                        <div class="master-skills">
+                            <div class="skill-section">
+                                <img class="icon" src="img/blue-small-ellipse.svg">
+                                <span class="skill">Окрашивание</span>
+                                <span class="price">1200 руб</span>
+                            </div>
+                            <div class="skill-section">
+                                <img class="icon" src="img/red-small-ellipse.svg">
+                                <span class="skill">Шеллак</span>
+                                <span class="price">500 руб</span>
+                            </div>
+                            <div class="skill-section">
+                                <img class="icon" src="img/yellow-small-ellipse.svg">
+                                <span class="skill">Миостимуляция</span>
+                                <span class="price">800 руб</span>
+                            </div>
+                        </div>
+                        <div class="master-buttons">
+                            <a href="#" class="sendmessage"><img class="icon" src="img/icon-message.svg"></a>
+                            <a href="#" class="subscribe">ЗАПИСАТЬСЯ <div class="question-icon"><img class="question"
+                                        src="img/icon-question.svg"><span class="description">Мастер свяжется с вами,
+                                        согласует<br>условия и подтвердит запись</span></div></a>
+                        </div>
+                    </div>
+                    <div class="master-section">
+                        <div class="master-preview">
+                            <div class="master-header">
+                                <div class="avatar">
+                                    <canvas class="user-icon" data-name="Аннэт"></canvas>
+                                </div>
+                                <div class="name">
+                                    <span class="title">Аннэт, <span class="type">мастер</span></span>
+                                    <span class="status"><img class="online" src="img/icon-online.svg">online</span>
+                                </div>
+                                <div class="rating">
+                                    <img class="icon" src="img/icon-star.svg">
+                                    <span class="score">4.6</span>
+                                </div>
+                            </div>
+                            <div class="master-location">
+                                <img class="icon" src="img/icon-location.svg">
+                                <span class="description">Мичуринский пр-т, 112</span>
+                                <a href="#" class="onmap">на карте</a>
+                            </div>
+                        </div>
+                        <div class="underline"></div>
+                        <div class="master-skills">
+                            <div class="skill-section">
+                                <img class="icon" src="img/blue-small-ellipse.svg">
+                                <span class="skill">Окрашивание</span>
+                                <span class="price">1000 руб</span>
+                            </div>
+                            <div class="skill-section">
+                                <img class="icon" src="img/red-small-ellipse.svg">
+                                <span class="skill">Шеллак</span>
+                                <span class="price">450 руб</span>
+                            </div>
+                            <div class="skill-section">
+                                <img class="icon" src="img/yellow-small-ellipse.svg">
+                                <span class="skill">Миостимуляция</span>
+                                <span class="price">900 руб</span>
+                            </div>
+                        </div>
+                        <div class="master-buttons">
+                            <a href="#" class="sendmessage"><img class="icon" src="img/icon-message.svg"></a>
+                            <a href="#" class="subscribe">ЗАПИСАТЬСЯ <div class="question-icon"><img class="question"
+                                        src="img/icon-question.svg"><span class="description">Мастер свяжется с вами,
+                                        согласует<br>условия и подтвердит запись</span></div></a>
+                        </div>
+                    </div>
+                    <div class="master-section">
+                        <div class="master-preview">
+                            <div class="master-header">
+                                <div class="avatar">
+                                    <canvas class="user-icon" data-name="В"></canvas>
+                                </div>
+                                <div class="name">
+                                    <span class="title">Центавра, <span class="type">салон</span></span>
+                                    <span class="status"><img class="online" src="img/icon-online.svg">online</span>
+                                </div>
+                                <div class="rating">
+                                    <img class="icon" src="img/icon-star.svg">
+                                    <span class="score">4.4</span>
+                                </div>
+                            </div>
+                            <div class="master-location">
+                                <img class="icon" src="img/icon-location.svg">
+                                <span class="description">ул. Петровка, 38</span>
+                                <a href="#" class="onmap">на карте</a>
+                            </div>
+                        </div>
+                        <div class="underline"></div>
+                        <div class="master-skills">
+                            <div class="skill-section">
+                                <img class="icon" src="img/blue-small-ellipse.svg">
+                                <span class="skill">Окрашивание</span>
+                                <span class="price">1300 руб</span>
+                            </div>
+                            <div class="skill-section">
+                                <img class="icon" src="img/red-small-ellipse.svg">
+                                <span class="skill">Шеллак</span>
+                                <span class="price">550 руб</span>
+                            </div>
+                            <div class="skill-section">
+                                <img class="icon" src="img/yellow-small-ellipse.svg">
+                                <span class="skill">Миостимуляция</span>
+                                <span class="price">900 руб</span>
+                            </div>
+                        </div>
+                        <div class="master-buttons">
+                            <a href="#" class="sendmessage"><img class="icon" src="img/icon-message.svg"></a>
+                            <a href="#" class="subscribe">ЗАПИСАТЬСЯ <div class="question-icon"><img class="question"
+                                        src="img/icon-question.svg"><span class="description">Мастер свяжется с вами,
+                                        согласует<br>условия и подтвердит запись</span></div></a>
+                        </div>
+                    </div>
+
+                        -->
+                        
+                </div>
+
+
+                <div class="showmore-button">
+                    <a href="#" class="showmore">ПОКАЗАТЬ ЕЩЁ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Начинается футер! -->
+
+    <footer class="footer-region">
+        <div class="_container">
+            <div class="layout">
+                <div class="data-region">
+                    <div class="footer-column">
+                        <a href="#" class="connect">Подключиться как салон</a>
+                        <a href="#" class="connect">Подключиться как мастер</a>
+                        <a href="#" class="forinvestors">Инвесторам</a>
+                        <a href="#" class="franchising">Франчайзинг</a>
+                        <a href="#" class="presscenter">Пресс-центр</a>
+                    </div>
+                    <div class="footer-column">
+                        <a href="#" class="allsalons">Все салоны</a>
+                        <a href="#" class="allmasters">Все мастера</a>
+                        <a href="#" class="specialoffers">Специальные предложения</a>
+                        <a href="#" class="giftshop">Магазин подарков</a>
+                        <a href="#" class="agreement">Пользовательское соглашение</a>
+                    </div>
+                    <div class="footer-column">
+                        <a href="#" class="aboutus">О проекте</a>
+                        <a href="#" class="contactus">Связаться с нами</a>
+                        <a href="#" class="vacancy">Вакансии</a>
+                    </div>
+                </div>
+                <div class="social-region">
+                    <div class="first-row">
+                        <a href="#" class="link"><i class="icon fab fa-vk"></i></a>
+                        <a href="#" class="link"><i class="icon fab fa-facebook-f"></i></a>
+                        <a href="#" class="link"><i class="icon fab fa-odnoklassniki"></i></a>
+                    </div>
+                    <div class="second-row">
+                        <a href="#" class="link"><i class="icon fab fa-instagram"></i></a>
+                        <a href="#" class="link"><i class="icon fab fa-youtube"></i></a>
+                        <a href="#" class="link"><i class="icon fab fa-telegram-plane"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ЗАКАНЧИВАЕТСЯ ФУТЕР! -->
+
+    
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+    <script src="./libs/avatar-generator/katweKibsletterAvatarjs.js"></script>
+
+    <!-- OWLCarousel -->
+    <script src="./libs/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+
+    <script src="./libs/avatar-generator/katweKibsletterAvatarjs.js"></script>
+
+    <script src="./libs/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+
+    <!-- Скрипты -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>

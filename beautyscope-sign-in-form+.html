@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="auth-region">
+        <div class="auth-header">
+            <div href="#" class="auth-link -active">
+                <span class="authtype -active">ВХОД</span>
+            </div>
+            <div href="#" class="auth-link">
+                <span class="authtype">РЕГИСТРАЦИЯ</span>
+            </div>
+        </div>
+        <div class="auth-content">
+            <div class="title-region">
+                <span class="title wegladtoseeyou">Мы рады Вас видеть!</span>
+                <span class="description">Войдите в личный кабинет чтобы оставлять заявки или стать мастером</span>
+            </div>
+            <div class="auth-password">
+                <span class="title">Войти по паролю</span>
+                <form action="" class="auth-form">
+                    <input type="text" class="login" placeholder="E-mail / Тел. номер" required>
+                    <input type="text" class="password" placeholder="Пароль" required>
+                    <label class="remember"><input type="checkbox" class="checkbox">Запомнить меня</label>
+                    <a href="#" class="forgotpass">забыли пароль?</a>
+                    <input type="submit" class="signin" name="signin" value="ВОЙТИ">
+                </form>
+            </div>
+            <div class="auth-sms">
+                <span class="title">Войти по коду из SMS</span>
+                <form action="" class="auth-form -sms">
+                    <input id="phone" type="text" class="number" placeholder="Тел. номер" required>
+                    <input type="submit" class="signin" name="signin" value="">
+                </form>
+            </div>
+            <div class="auth-socialnetworks">
+                <span class="title">Войти через соцсети</span>
+                <div class="social-networks">
+                    <a href="#" class="signin"><img class="icon-vk" src="img/icon-signin-vk.svg"></a>
+                    <a href="#" class="signin"><img class="icon-fb" src="img/icon-signin-fb.svg"></a>
+                    <a href="#" class="signin"><img class="icon-ok" src="img/icon-signin-ok.svg"></a>
+                </div>
+            </div>
+        </div>
+        <div class="auth-footer">
+            <span class="agreement">Продолжая регистрацию Вы соглашаетесь с условиями <a class="privacy">Политики
+                    конфиденциальности</a></span>
+        </div>
+    </div>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+    <!-- JQuery masked input -->
+    <script src="libs/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+
+    <!-- OWLCarousel -->
+    <script src="libs/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Скрипты -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>

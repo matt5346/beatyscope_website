@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="chat-region -desktop">
+        <div class="users-region">
+
+            <div class="user_box">
+                <a href="#" class="user-link">
+                    <div class="user-region">
+                        <span class="name">Беатрисс, <span class="type">салон</span><img class="status online"
+                                src="img/icon-online.svg"></span>
+
+                    </div>
+                    <canvas class="user-icon" data-name="Беатрисс"></canvas>
+                </a>
+
+                <div class="new_messages">
+                    <span class="message_amount">30</span>
+                </div>
+            </div>
+
+            <div class="user_box">
+                <a href="#" class="user-link">
+                    <div class="user-region">
+                        <span class="name">Золотая Амфора, <span class="type">салон</span></span>
+                        <div class="new_messages">
+                            <span class="message_amount">1</span>
+                        </div>
+                    </div>
+    
+                    <canvas class="user-icon" data-name="Амфора"></canvas>
+                </a>
+
+                <div class="new_messages">
+                    <span class="message_amount">1</span>
+                </div>
+            </div>
+
+            <div class="user_box">
+                <a href="#" class="user-link">
+                    <div class="user-region">
+                        <span class="name">Марина Иванова, <span class="type">мастер</span><img class="status online"
+                                src="img/icon-online.svg"></span>
+
+                    </div>
+    
+                    <canvas class="user-icon" data-name="Марина"></canvas>
+                </a>
+
+                <div class="new_messages">
+                    <span class="message_amount">2</span>
+                </div>
+            </div>
+
+            <div class="user_box">
+                <a href="#" class="user-link">
+                    <div class="user-region">
+                        <span class="name">Жакет, <span class="type">салон</span></span>
+
+                    </div>
+    
+                    <canvas class="user-icon" data-name="Жакет"></canvas>
+                </a>
+
+                <div class="new_messages">
+                    <span class="message_amount">1</span>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="main-region">
+            <div class="chat-header">
+                    <canvas class="user-icon" data-name="Аннэт"></canvas>
+                    
+                <div class="user-name">
+                    <span class="name">Аннэт, <span class="type">мастер</span></span>
+                    <span class="status"><img class="icon online" src="img/icon-online.svg">online</span>
+                </div>
+
+                <button id="sidebar_button" class="sidebar_btn">
+                    <img class="open" src="./img/chat_open.svg">
+                    <img class="close" src="./img/chat_close.svg">
+                </button>
+
+                <button id="menu_button" class="menu-region">
+                    <img class="menu" src="img/icon-menu.svg">
+                </button>
+                <div id="menu_buttons" class="menu-buttons" style="display: none;">
+                    <a href="#" class="menu-link"><span class="profile"><img class="icon-profile"
+                                src="img/icon-user-chat.svg">Профиль</span></a>
+                    <a href="#" class="menu-link"><span class="complain"><img class="icon-complain"
+                                src="img/icon-dislike-chat.svg">Пожаловаться</span></a>
+                    <a href="#" class="menu-link"><span class="block"><img class="icon-block"
+                                src="img/icon-block-chat.svg">Заблокировать</span></a>
+                    <a href="#" class="menu-link"><span class="delete"><img class="icon-delete"
+                                src="img/icon-delete-chat.svg">Удалить</span></a>
+                </div>
+            </div>
+            <div class="chat-content">
+                <div class="user-message">
+                    <div class="this-message">
+                        <div class="thismessage">
+                            <span class="message">Здравствуйте</span>
+                        </div>
+                        <div class="state-status">
+                            <span class="state">Прочитано</span>
+                        </div>
+                    </div>
+                    <span class="time_chat">11.01</span>
+                </div>
+                <div class="opponent-message">
+                    <div class="this-message">
+                        <div class="thismessage">
+                            <span class="message">Приветствую!</span>
+                        </div>
+                        <div class="state-status">
+                            <span class="state">Прочитано</span>
+                        </div>
+                    </div>
+                    <span class="time_chat">11.03</span>
+                </div>
+                <div class="user-message">
+                    <div class="this-message">
+                        <div class="thismessage">
+                            <span class="message">У меня вопрос</span>
+                        </div>
+                        <div class="state-status">
+                            <span class="state">Отправлено</span>
+                        </div>
+                    </div>
+                    <span class="time_chat">11.04</span>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <textarea class="textarea" type="text" name="answer" placeholder="Введите сообщение"></textarea>
+                <div class="chat-buttons">
+                    <img class="icon attach -big" src="img/icon-attach.svg">
+                    <div class="separator"></div>
+                    <img class="icon send -big" src="img/icon-send.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Заканчивается футер -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="./libs/jquery/dist/jquery.min.js"></script>
+
+    <!-- OWLCarousel -->
+    <script src="./libs/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+
+    <!-- JQuery masked input -->
+    <script src="./libs/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+    
+    <script src="./libs/avatar-generator/katweKibsletterAvatarjs.js"></script>
+
+    <!-- Скрипты -->
+    <script type="text/javascript" src="./js/script.js"></script>
+
+</body>
+
+</html>

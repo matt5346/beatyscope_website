@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <title>beautyscope - заказ</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="order-region">
+        <div class="order-content">
+            <div class="order-details">
+                <div class="order-title">
+                    <span class="title">Детали записи</span>
+                    <span class="name">Бегемот,<span class="type">салон</span></span>
+                </div>
+                <div class="underline"></div>
+                <div class="order-services">
+                    <div class="service-region">
+                        <span class="name"><img class="icon ellipse" src="img/blue-small-ellipse.svg">Окрашивание</span>
+                        <span class="price">1200 руб</span>
+                    </div>
+                    <div class="service-region">
+                        <span class="name"><img class="icon ellipse" src="img/red-small-ellipse.svg">Шеллак</span>
+                        <span class="price">500 руб</span>
+                    </div>
+                </div>
+            </div>
+            <div class="order-information">
+                <form action="" class="order-form" id="order_form">
+                    <div class="title-region">
+                        <span class="title">Ваши данные</span>
+                    </div>
+                    <div class="first-section">
+                        <input type="text" class="name" placeholder="Ваше имя" required>
+                        <input placeholder="Дата" class="date" type="text" onfocus="(this.type='date')" required>
+                        <input placeholder="Время" class="time" type="text" onfocus="(this.type='time')" required>
+                    </div>
+                    <div class="second-section">
+                        <span class="title">Мне удобно, чтоб со мной<br>связались через</span>
+                        <label class="radio"><input type="radio" class="telephone" name="feedback" value="telephone"
+                                checked required">Телефон</label>
+                        <label class="radio"><input type="radio" class="whatsapp" name="feedback" value="whatsapp"
+                                required">WhatsApp</label>
+                        <label class="radio"><input type="radio" class="email" name="feedback" value="email"
+                                required">E-mail</label>
+                        <input id="phone" type="text" class="phonenumber" placeholder="+7(___)___-__-__" required>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="order-footer">
+            <button type="submit" form="order_form" class="subscribe">ЗАПИСАТЬСЯ</button>
+            <span class="description">Мастер свяжется с вами, согласует условия и подтвердит запись</span>
+        </div>
+    </div>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+    <!-- JQuery masked input -->
+    <script src="libs/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+
+    <!-- OWLCarousel -->
+    <script src="libs/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Скрипты -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>

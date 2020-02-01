@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html class="map-page" lang=ru>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Карта</title>
+
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!-- Стили OWLCarousel -->
+    <link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/owl.theme.default.min.css">
+
+    <!-- Стили-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- НАЧИНАЕТСЯ HEADER -->
+
+    <header class="header-region">
+        <div class="_container">
+            <div class="layout">
+
+                <button class="nav-toggle" id="nav-toggle" type="button">
+                    <div class="nav-toggle_item"></div>
+                </button>
+
+                <div class="logotype-region">
+                    <img class="logotype" src="img/logo.svg">
+                </div>
+                <div class="location-region">
+                    <span class="location"><i class="icon fas fa-map-marker-alt"></i>Город</span>
+                </div>
+                <div class="circles-region">
+                    <a href="#" class="blue-button section">
+                        <img class="icon" src="img/icon-hair.svg">
+                    </a>
+                    <a href="#" class="red-button section">
+                        <img class="icon" src="img/icon-cosmetics.svg">
+                    </a>
+                    <a href="#" class="yellow-button section">
+                        <img class="icon" src="img/icon-manicure.svg">
+                    </a>
+                    <a href="#" class="green-button section">
+                        <img class="icon" src="img/icon-massage.svg">
+                    </a>
+                </div>
+                <div class="buttons-region">
+                    <a href="#" class="catalog">Каталог мастеров</a>
+                    <a href="#" class="bespecialist">Стать специалистом</a>
+                </div>
+                <div class="personal-region">
+                        <div class="options-region">
+                            <div class="options_box">
+                                <img class="notif" src="img/notif.svg" alt="">
+                                <a href="#" class="heart button"><i class="icon fas fa-heart"></i></a>
+                                
+                            </div>
+
+                            <div class="options_box">
+                                <img class="notif" src="img/notif.svg" alt="">
+                                <a href="#" class="notifications button"><i class="icon fas fa-bell"></i></a>
+                                
+                            </div>
+
+                            <div class="options_box">
+                                <img class="notif" src="img/notif.svg" alt="">
+                                <a href="#" class="message button"><i class="icon fas fa-envelope"></i></a>
+                                
+                            </div>
+                        </div>
+                    <div class="profile-region">
+                        <a href="#" class="account button"><i class="icon fas fa-user-alt"></i></a>
+                        <a href="#" class="signin button">Вход</a>
+                        <a href="#" class="registration button">Регистрация</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ЗАКАНЧИВАЕТСЯ HEADER -->
+    <!------------------------------------------------------------>
+    <!----------map-information ВЫНЕС ЗА main-map---------------->
+    <!------------------------------------------------------------>
+
+    <div class="mainmap-region container_map">
+        <div class="main-map">
+            <div class="main-options">
+                <div class="search-options">
+                    <div class="title">
+                        <img class="iconellipse" src="img/red-ellipse.svg">
+                        <p>
+                            КриолиполизКриолиполиз
+                        </p>
+                        <a href="#" class="deletelink">
+                            <img class="iconcross" src="img/icon-cross.svg">
+                        </a>
+                    </div>
+                    <a href="#" class="plusbutton"><img class="iconplus" src="img/icon-plus.svg"></a>
+                </div>
+
+                <form action="" class="parametres-region">
+
+                        <div class="isonline">
+                            <input type="checkbox" name="" id="post">
+                            <label for="post" id="check_label"></label>
+                            Только онлайн
+                        </div>
+
+                        <div class="mobile_flag"></div>
+
+
+                    <a href="#" class="map">СМОТРЕТЬ СПИСКОМ</a>
+                </form>
+            </div>
+            <iframe id="main_map"
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d17961.335321797374!2d37.61904830688478!3d55.75560259811316!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1562263854656!5m2!1sru!2sru"
+                width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+        </div>
+
+        <div class="map-information">
+
+            <div class="map_cancel_box">
+                <h4>скрыть</h4>
+                <button class="cancel_btn"><img src="./img/cancel_map.svg" alt=""></button>
+            </div>
+                <div class="information-header">
+                    <!----------USER AVATAR ICON------------->
+                    <div class="avatar-region"><canvas class="user-icon" data-name="Бегемот"></canvas></div>
+                    <span class="name">Бегемот, <span class="type">салон</span><br><span class="status"><img
+                                class="status online" src="img/icon-online.svg">online</span></span>
+                    <span class="rating"><img class="icon star" src="img/icon-star.svg">4.2</span>
+                </div>
+                <div class="information-location"><span class="location"><img class="icon location"
+                            src="img/icon-location.svg">ул. Тверская-Ямская, 14к3</span></div>
+                <div class="underline"></div>
+                <div class="services-region">
+                    <div class="service-region">
+                        <span class="name"><img class="icon ellipse" src="img/blue-small-ellipse.svg">Окрашивание</span>
+                        <span class="price">1200 руб</span>
+                    </div>
+                    <div class="service-region">
+                        <span class="name"><img class="icon ellipse" src="img/red-small-ellipse.svg">Шеллак</span>
+                        <span class="price">500 руб</span>
+                    </div>
+                    <div class="service-region">
+                        <span class="name"><img class="icon ellipse"
+                                src="img/yellow-small-ellipse.svg">Окрашивание</span>
+                        <span class="price">800 руб</span>
+                    </div>
+                </div>
+                <div class="underline"></div>
+                <div class="informationmap-carousel_first">
+                    <div class="informationmap-slides">
+                        <img class="image" src="img/female-haircut2.png">
+                        <img class="image" src="img/male-haircut.png">
+                        <img class="image" src="img/female-haircut1.png">
+                    </div>
+                    <div class="informationmap-buttons"></div>
+                </div>
+                <div class="information-description">
+                    <span class="description">Рыбатекст используется дизайнерами, проектировщиками и
+                        фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым. Это
+                        тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого
+                        текста или продемонстрировать типографику в деле.</span>
+                </div>
+                <div class="underline"></div>
+                <div class="information-carousel">
+                    <div class="mapcarousel-slides">
+                        <div class="information-comments">
+                            <div class="comment-header">
+                                <span class="name">Инна Петрова</span>
+                                <span class="date">01.01.2019</span>
+                                <span class="rate"><img class="icon star" src="img/icon-star.svg">4.2</span>
+                            </div>
+                            <div class="comment-content">
+                                <span class="content">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                                    сгенерировать несколько абзацев более менее осмысленного текста рыбы на
+                                    русском языке, а начинающему оратору отточить навык публичных выступлений в
+                                    домашних условиях.</span>
+                            </div>
+                        </div>
+                        <div class="information-comments">
+                            <div class="comment-header">
+                                <span class="name">Инна Петрова</span>
+                                <span class="date">01.01.2019</span>
+                                <span class="rate"><img class="icon star" src="img/icon-star.svg">4.2</span>
+                            </div>
+                            <div class="comment-content">
+                                <span class="content">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                                    сгенерировать несколько абзацев более менее осмысленного текста рыбы на
+                                    русском языке, а начинающему оратору отточить навык публичных выступлений в
+                                    домашних условиях.</span>
+                            </div>
+                        </div>
+                        <div class="information-comments">
+                            <div class="comment-header">
+                                <span class="name">Инна Петрова</span>
+                                <span class="date">01.01.2019</span>
+                                <span class="rate"><img class="icon star" src="img/icon-star.svg">4.2</span>
+                            </div>
+                            <div class="comment-content">
+                                <span class="content">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                                    сгенерировать несколько абзацев более менее осмысленного текста рыбы на
+                                    русском языке, а начинающему оратору отточить навык публичных выступлений в
+                                    домашних условиях.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mapcarousel-buttons">
+                    </div>
+                </div>
+                <div class="information-buttons">
+                    <a href="#" class="information-link"><img class="sendmessage" src="img/icon-message.svg"></a>
+                    <a href="#" class="subscribe">ЗАПИСАТЬСЯ <div class="question-icon"><img class="question"
+                                src="img/icon-question.svg"><span class="description">Мастер свяжется с вами,
+                                согласует<br>условия и подтвердит запись</span></div></a>
+                </div>
+            </div>
+    </div>
+
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+    <!-- OWLCarousel -->
+    <script src="./libs/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+
+    <script src="./libs/avatar-generator/katweKibsletterAvatarjs.js"></script>
+    <!-- JQuery masked input -->
+    <script src="./libs/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+    
+    <script src="libs/jQueryFormStyler-master/dist/jquery.formstyler.min.js"></script>
+
+    <!-- Скрипты -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>

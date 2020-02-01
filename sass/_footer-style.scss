@@ -1,0 +1,85 @@
+// Начало стилей для футера
+
+.footer-region {
+    background-color: $color-purple;
+    height: 100%;
+
+    .layout {
+        display: flex;
+        max-width: 1170px!important;
+        width: 100% !important;
+        margin: 0 auto !important;
+        padding: 0 30px !important;
+        justify-content: space-between;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.data-region {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    padding: 36px 0;
+
+    a {
+        font-family: $font-general;
+        font-size: 14px;
+        font-weight: normal;
+        color: white;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .connect:first-child,
+    .allsalons,
+    .aboutus {
+        margin-bottom: 10px;
+    }
+
+    .forinvestors,
+    .specialoffers,
+    .vacancy {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .franchising,
+    .giftshop {
+        margin-bottom: 20px;
+    }
+}
+
+.social-region {
+    width: 30%;
+    text-align: right;
+    padding: 30px 0 30px 0;
+
+    a {
+        font-size: 22px;
+        color: white;
+    }
+
+    .first-row {
+        margin-bottom: 20px;
+        a {
+            margin-right: 5px;
+        }
+    }
+
+    .icon {
+        margin-right: 23px;
+    }
+}
+
+// Конец стилей для футера

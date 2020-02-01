@@ -1,0 +1,326 @@
+body {
+    background: #FCF6FE;
+
+    a.active.focus,
+    a.active:focus,
+    a.focus,
+    a:active.focus,
+    a:active:focus,
+    a:focus,
+    button.active.focus,
+    button.active:focus,
+    button.focus,
+    button:active.focus,
+    button:active:focus,
+    button:focus,
+    input:active,
+    input:focus,
+    textarea,
+    textarea:focus,
+    textarea:active {
+        outline: none !important;
+    }
+
+    button::-moz-focus-inner {
+        border: 0;
+    }
+}
+
+.header-region {
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+    z-index: 2;
+
+
+    .layout {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // flex-wrap: wrap;
+        width: 100% !important;
+        min-height: 68px;
+        padding: 10px 0;
+        max-width: 1440px!important;
+        margin: 0 auto !important;
+    }
+
+    .first-section,
+    .second-section {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.logotype-region {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 200px;
+    width: 15%;
+    margin: auto 25px auto 30px;
+    & img {
+        width: 100%;
+        height: auto;
+    }
+
+    .circle:hover {
+        transform: rotate(720deg);
+        animation: target 1s infinite linear;
+    }
+}
+
+.location-region {
+    font-family: $font-general;
+    font-size: 15px;
+    width: 18%;
+    letter-spacing: -0.8px;
+    color: black;
+
+    .icon {
+        font-size: 14px;
+        color: $color-purple;
+        margin-right: 12px;
+    }
+}
+
+.circles-region {
+    display: flex;
+    justify-content: space-between;
+    width: 16%;
+    margin-right: 15px;
+
+    > .section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .blue-button {
+        background-color: #448EE6;
+    }
+
+    .red-button {
+        background-color: #DF4F4F;
+    }
+
+    .yellow-button {
+        background-color: #FFCD4E;
+    }
+
+    .green-button {
+        background-color: #85CA6D;
+    }
+
+    a {
+        .icon {
+            width: 50%;
+            height: 50%;
+        }
+    }
+}
+
+.buttons-region {
+    display: flex;
+    width: 40%;
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $font-general;
+        font-size: 14px;
+        text-align: center;
+        text-decoration: none;
+        width: 170px;
+        min-height: 40px;
+        border-radius: 20px;
+    }
+
+    .catalog {
+        letter-spacing: 0.4px;
+        color: white;
+        background-color: $color-purple;
+        margin-right: 12px;
+    }
+
+    .bespecialist {
+        letter-spacing: -0.3px;
+        color: $color-purple;
+        background-color: white;
+        border: 1px solid $color-purple;
+    }
+}
+
+.personal-region {
+    display: flex;
+    align-items: center;
+    max-width: 330px;
+    width: 33%;
+    font-family: $font-general;
+    font-size: 14px;
+
+    & .options-region {
+        display: flex;
+        width: 30%;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .profile-region {
+        width: 70%;
+        margin-left: 5%;
+        .unlogged-region {
+            display: none;
+            &.-active {
+                display: block;
+            }
+        }
+    }
+    .logged-region {
+        display: none;
+        &.-active {
+            display: flex;
+            align-items: center;
+        }
+        .avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .name {
+            font-weight: 300;
+            font-size: 14px;
+            color: black;
+        }
+    }
+}
+
+.options-region {
+    font-size: 17px;
+    padding-bottom: 20px;
+
+    .button {
+        margin-right: 16px;
+        color: $color-purple;
+    }
+
+    & .notif {
+        margin-left: 17px;
+        position: relative;
+        top: 8px;
+        &:last-child {
+            margin-left: 25px;
+        }
+    }
+}
+
+.profile-region {
+
+    .account {
+        font-size: 11px;
+        color: $color-purple;
+    }
+
+    .signin {
+        margin-left: 12px;
+        color: black;
+    }
+
+    .registration {
+        margin-left: 16px;
+        color: black;
+    }
+}
+
+.clientselector-region,
+.masterselector-region {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 !important;
+
+    .master {
+        margin: 0 !important;
+    }
+}
+.nav-toggle {
+    width: 30px;
+    padding: 10px 0;
+    display: none;
+    font-size: 0;
+    color: transparent;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    top: -10px;
+    left: 34px;
+    z-index: 1;
+
+    &:focus {
+        outline: 0;
+    }
+
+    &.active {
+        & .nav-toggle_item {
+            background: none;
+
+            &::before {
+                transform-origin: left top;
+                transform: rotate(45deg) translate3d(0, -2px, 0);
+            }
+
+            &::after {
+                transform-origin: left bottom;
+                transform: rotate(-45deg) translate3d(0, 4px, 0);
+            }
+        }
+    }
+
+    & .nav-toggle_item {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #7C107E;
+        position: absolute;
+        top: 221%;
+        left: -55%;
+        bottom: 0;
+        margin: auto;
+        transition: background .2s linear;
+
+
+        &::before, &::after {
+            content: "";
+            width: 100%;
+            height: 3px;
+            background-color: #7C107E;
+            position: absolute;
+            left: 0;
+            z-index: 1;
+            transition: transform .2s linear;
+        }
+
+        &::before {
+            top: -8px;
+        }
+
+        &::after {
+            bottom: -8px;
+        }
+
+        
+    }
+}
+
+
+
+// Конец стилей для header'а
